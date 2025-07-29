@@ -102,12 +102,16 @@
 	<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 		<div class="flex items-center space-x-2">
 			<div
-				class="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-blue-800"
+				class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-blue-800"
 			>
-				<span class="text-sm font-bold text-white">AM</span>
+				<img
+					src="/images/logo-amflooring.jpg"
+					alt="Logo"
+					class="h-full w-full rounded-full object-cover"
+				/>
 			</div>
 			<h1
-				class="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-xl font-bold text-transparent"
+				class="bg-gradient-to-r from-red-600 to-gray-800 bg-clip-text text-xl font-bold text-transparent"
 			>
 				AMFlooring
 			</h1>
@@ -687,12 +691,16 @@
 			<div class="md:col-span-2">
 				<div class="mb-6 flex items-center space-x-2">
 					<div
-						class="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-blue-700"
+						class="flex h-10 w-10 items-center justify-center rounded-full border-1 border-white bg-gradient-to-br from-blue-500 to-blue-700 shadow"
 					>
-						<span class="font-bold text-white">AM</span>
+						<img
+							src="/images/logo-amflooring.jpg"
+							alt="Logo"
+							class="h-full w-full rounded-full object-cover"
+						/>
 					</div>
 					<h3
-						class="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-2xl font-bold text-transparent"
+						class="bg-gradient-to-r from-red-500 to-red-300 bg-clip-text text-2xl font-bold text-transparent"
 					>
 						AMFlooring
 					</h3>
@@ -702,173 +710,189 @@
 					tahun. Wujudkan lapangan impian Anda bersama kami.
 				</p>
 
-				<!-- Social Media -->
 				<div class="flex space-x-4">
+					<!-- Facebook -->
 					<a
 						href="#"
-						class="flex h-10 w-10 transform items-center justify-center rounded-full bg-blue-600 shadow-lg transition-all duration-300 hover:scale-110 hover:bg-blue-700"
+						aria-label="Facebook"
+						class="group flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 shadow-lg transition-all duration-300 hover:scale-110 hover:bg-blue-700"
 					>
-						<span class="text-sm font-bold">f</span>
+						<svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+							<path
+								d="M22 12.1C22 6.5 17.5 2 12 2S2 6.5 2 12.1c0 5 3.7 9.1 8.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6v1.9h3l-.5 3h-2.5v7C18.3 21.1 22 17 22 12.1z"
+							/>
+						</svg>
 					</a>
+
+					<!-- Instagram -->
 					<a
 						href="#"
-						class="flex h-10 w-10 transform items-center justify-center rounded-full bg-pink-600 shadow-lg transition-all duration-300 hover:scale-110 hover:bg-pink-700"
+						aria-label="Instagram"
+						class="group flex h-10 w-10 items-center justify-center rounded-full bg-pink-600 shadow-lg transition-all duration-300 hover:scale-110 hover:bg-pink-700"
 					>
-						<span class="text-sm font-bold">IG</span>
+						<svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+							<path
+								d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 2 .2 2.5.4.6.2 1.1.6 1.6 1.1s.9 1 .9 1.6c.2.5.3 1.3.4 2.5.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 2-.4 2.5-.2.6-.6 1.1-1.1 1.6s-1 .9-1.6 1.1c-.5.2-1.3.3-2.5.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-2-.2-2.5-.4-.6-.2-1.1-.6-1.6-1.1s-.9-1-.9-1.6c-.2-.5-.3-1.3-.4-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-2 .4-2.5.2-.6.6-1.1 1.1-1.6S4.8 2.7 5.4 2.5c.5-.2 1.3-.3 2.5-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.3-.5.2-.8.4-1.1.8-.4.3-.6.6-.8 1.1-.1.4-.3 1-.3 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.7.3 2.1.2.5.4.8.8 1.1.3.4.6.6 1.1.8.4.1 1 .3 2.1.3 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.3.5-.2.8-.4 1.1-.8.4-.3.6-.6.8-1.1.1-.4.3-1 .3-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.3-2.1-.2-.5-.4-.8-.8-1.1-.3-.4-.6-.6-1.1-.8-.4-.1-1-.3-2.1-.3-1.2-.1-1.6-.1-4.7-.1zm0 3.9a5.9 5.9 0 110 11.8 5.9 5.9 0 010-11.8zm0 1.8a4.1 4.1 0 100 8.2 4.1 4.1 0 000-8.2zm5.8-1.9a1.4 1.4 0 110 2.8 1.4 1.4 0 010-2.8z"
+							/>
+						</svg>
 					</a>
+
+					<!-- WhatsApp -->
 					<a
 						href="#"
-						class="flex h-10 w-10 transform items-center justify-center rounded-full bg-green-600 shadow-lg transition-all duration-300 hover:scale-110 hover:bg-green-700"
+						aria-label="WhatsApp"
+						class="group flex h-10 w-10 items-center justify-center rounded-full bg-green-500 shadow-lg transition-all duration-300 hover:scale-110 hover:bg-green-600"
 					>
-						<span class="text-sm font-bold">WA</span>
+						<svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+							<path
+								d="M12.01 2.003a9.953 9.953 0 00-8.31 15.427L2.003 22l4.684-1.68a9.957 9.957 0 0014.327-8.317c0-5.514-4.486-10-10-10zm.042 17.006a7.942 7.942 0 01-4.2-1.2l-.3-.2-2.484.89.847-2.453-.2-.3a7.964 7.964 0 1114.052-4.902 7.968 7.968 0 01-7.715 8.165zM16.64 14.5c-.27-.136-1.6-.79-1.846-.882-.247-.09-.428-.136-.608.136s-.7.882-.86 1.065c-.157.181-.312.204-.58.068a6.471 6.471 0 01-1.913-1.178 7.17 7.17 0 01-1.328-1.65c-.14-.24-.014-.37.105-.505.106-.118.24-.308.362-.462.122-.154.162-.26.244-.437.08-.177.04-.33-.02-.462-.06-.136-.608-1.46-.834-2.004-.218-.524-.438-.454-.6-.462l-.513-.01c-.176 0-.462.067-.704.33s-.92.898-.92 2.188.943 2.538 1.075 2.715c.132.177 1.85 2.833 4.48 3.97.626.27 1.113.433 1.494.554.628.2 1.2.172 1.652.104.504-.074 1.6-.654 1.825-1.287.225-.632.225-1.177.158-1.287-.066-.11-.244-.178-.51-.312z"
+							/>
+						</svg>
 					</a>
+
+					<!-- YouTube -->
 					<a
 						href="#"
-						class="flex h-10 w-10 transform items-center justify-center rounded-full bg-blue-500 shadow-lg transition-all duration-300 hover:scale-110 hover:bg-blue-600"
+						aria-label="YouTube"
+						class="group flex h-10 w-10 items-center justify-center rounded-full bg-red-600 shadow-lg transition-all duration-300 hover:scale-110 hover:bg-red-700"
 					>
-						<span class="text-sm font-bold">TW</span>
+						<svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+							<path
+								d="M19.6 3H4.4C3 3 2 4 2 5.4v13.2C2 20 3 21 4.4 21h15.2c1.4 0 2.4-1 2.4-2.4V5.4C22 4 21 3 19.6 3zM10 16V8l6 4-6 4z"
+							/>
+						</svg>
 					</a>
+
+					<!-- TikTok -->
 					<a
 						href="#"
-						class="flex h-10 w-10 transform items-center justify-center rounded-full bg-red-600 shadow-lg transition-all duration-300 hover:scale-110 hover:bg-red-700"
+						aria-label="TikTok"
+						class="group flex h-10 w-10 items-center justify-center rounded-full bg-black shadow-lg transition-all duration-300 hover:scale-110 hover:bg-gray-800"
 					>
-						<span class="text-sm font-bold">YT</span>
+						<svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 256 256">
+							<path
+								d="M168 48c11.5 8.7 23.5 13.1 36 13.9v29.2c-11.7-.2-22.8-3.5-33.3-9.7v62.6c0 48.1-51.6 75.9-90.1 52.7-26.3-16-33.7-54.3-14.3-79.7 13.4-17.6 33.8-24.7 53.3-20.8V132c-10.7-2.9-21.5 1.2-26.7 11.4-7.4 14.3 2.5 32.7 19.3 33.9 11.6.8 23.8-8.7 23.8-23.5V24h31v24z"
+							/>
+						</svg>
 					</a>
+				</div>
+
+				<!-- Quick Links -->
+				<div>
+					<h4 class="mb-6 text-lg font-semibold text-blue-400">Tautan Cepat</h4>
+					<ul class="space-y-3">
+						<li>
+							<a
+								href="#home"
+								class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
+								>Beranda</a
+							>
+						</li>
+						<li>
+							<a
+								href="#about"
+								class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
+								>Tentang Kami</a
+							>
+						</li>
+						<li>
+							<a
+								href="#layanan"
+								class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
+								>Layanan</a
+							>
+						</li>
+						<li>
+							<a
+								href="#visi"
+								class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
+								>Visi & Misi</a
+							>
+						</li>
+						<li>
+							<a
+								href="#kontak"
+								class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
+								>Kontak</a
+							>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Services -->
+				<div>
+					<h4 class="mb-6 text-lg font-semibold text-blue-400">Layanan Kami</h4>
+					<ul class="space-y-3">
+						<li>
+							<a
+								href="#"
+								class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
+								>Lapangan Futsal</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
+								>Lapangan Basket</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
+								>Lapangan Badminton</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
+								>Lapangan Tenis</a
+							>
+						</li>
+						<li>
+							<a
+								href="#"
+								class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
+								>Lapangan Voli</a
+							>
+						</li>
+					</ul>
 				</div>
 			</div>
 
-			<!-- Quick Links -->
-			<div>
-				<h4 class="mb-6 text-lg font-semibold text-blue-400">Tautan Cepat</h4>
-				<ul class="space-y-3">
-					<li>
-						<a
-							href="#home"
-							class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
-							>Beranda</a
-						>
-					</li>
-					<li>
-						<a
-							href="#about"
-							class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
-							>Tentang Kami</a
-						>
-					</li>
-					<li>
-						<a
-							href="#layanan"
-							class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
-							>Layanan</a
-						>
-					</li>
-					<li>
-						<a
-							href="#visi"
-							class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
-							>Visi & Misi</a
-						>
-					</li>
-					<li>
-						<a
-							href="#kontak"
-							class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
-							>Kontak</a
-						>
-					</li>
-				</ul>
-			</div>
-
-			<!-- Services -->
-			<div>
-				<h4 class="mb-6 text-lg font-semibold text-blue-400">Layanan Kami</h4>
-				<ul class="space-y-3">
-					<li>
-						<a
-							href="#"
-							class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
-							>Lapangan Futsal</a
-						>
-					</li>
-					<li>
-						<a
-							href="#"
-							class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
-							>Lapangan Basket</a
-						>
-					</li>
-					<li>
-						<a
-							href="#"
-							class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
-							>Lapangan Badminton</a
-						>
-					</li>
-					<li>
-						<a
-							href="#"
-							class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
-							>Lapangan Tenis</a
-						>
-					</li>
-					<li>
-						<a
-							href="#"
-							class="inline-block text-gray-300 transition-colors duration-300 hover:translate-x-1 hover:text-blue-400"
-							>Lapangan Voli</a
-						>
-					</li>
-				</ul>
-			</div>
-		</div>
-
-		<!-- Contact Info Footer -->
-		<div class="mt-12 border-t border-gray-700 pt-8">
-			<div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-				<div class="flex items-center space-x-3">
-					<div class="flex h-8 w-8 items-center justify-center rounded-full bg-blue-600">📍</div>
-					<div>
-						<p class="text-sm text-gray-400">Alamat</p>
-						<p class="text-white">Jl. Olahraga No. 123, Medan</p>
+			<!-- Contact Info Footer -->
+			<div class="mt-12 border-t border-gray-700 pt-8">
+				<div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+					<div class="flex items-center space-x-3">
+						<div class="flex h-8 w-8 items-center justify-center rounded-full bg-blue-600">📍</div>
+						<div>
+							<p class="text-sm text-gray-400">Alamat</p>
+							<p class="text-white">Jl. Olahraga No. 123, Medan</p>
+						</div>
+					</div>
+					<div class="flex items-center space-x-3">
+						<div class="flex h-8 w-8 items-center justify-center rounded-full bg-blue-600">📞</div>
+						<div>
+							<p class="text-sm text-gray-400">Telepon</p>
+							<p class="text-white">+62 821-xxxx-xxxx</p>
+						</div>
+					</div>
+					<div class="flex items-center space-x-3">
+						<div class="flex h-8 w-8 items-center justify-center rounded-full bg-blue-600">✉️</div>
+						<div>
+							<p class="text-sm text-gray-400">Email</p>
+							<p class="text-white">info@amflooring.com</p>
+						</div>
 					</div>
 				</div>
-				<div class="flex items-center space-x-3">
-					<div class="flex h-8 w-8 items-center justify-center rounded-full bg-blue-600">📞</div>
-					<div>
-						<p class="text-sm text-gray-400">Telepon</p>
-						<p class="text-white">+62 821-xxxx-xxxx</p>
-					</div>
-				</div>
-				<div class="flex items-center space-x-3">
-					<div class="flex h-8 w-8 items-center justify-center rounded-full bg-blue-600">✉️</div>
-					<div>
-						<p class="text-sm text-gray-400">Email</p>
-						<p class="text-white">info@amflooring.com</p>
-					</div>
-				</div>
 			</div>
-		</div>
 
-		<!-- Copyright -->
-		<div class="mt-8 border-t border-gray-700 pt-8 text-center">
-			<div class="flex flex-col items-center justify-between md:flex-row">
-				<p class="text-sm text-gray-400">&copy; 2025 AMFlooring. Semua hak dilindungi.</p>
-				<div class="mt-4 flex space-x-6 md:mt-0">
-					<a
-						href="#"
-						class="text-sm text-gray-400 transition-colors duration-300 hover:text-blue-400"
-						>Kebijakan Privasi</a
-					>
-					<a
-						href="#"
-						class="text-sm text-gray-400 transition-colors duration-300 hover:text-blue-400"
-						>Syarat & Ketentuan</a
-					>
-					<a
-						href="#"
-						class="text-sm text-gray-400 transition-colors duration-300 hover:text-blue-400"
-						>Sitemap</a
-					>
+			<!-- Copyright -->
+			<div class="mt-8 border-t border-gray-700 pt-8 text-center">
+				<div class="flex flex-col items-center justify-between md:flex-row">
+					<p class="text-sm text-gray-400">&copy; 2025 AMFlooring. Semua hak dilindungi.</p>
 				</div>
 			</div>
 		</div>
