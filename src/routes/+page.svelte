@@ -2,11 +2,7 @@
 	let current = 0;
 	let isMenuOpen = false;
 
-	const slides = [
-		'https://picsum.photos/id/1011/1200/400',
-		'https://picsum.photos/id/1015/1200/400',
-		'https://picsum.photos/id/1016/1200/400'
-	];
+	const slides = ['/images/slides3.jpg', '/images/slides2.jpeg', '/images/slides1.jpg'];
 
 	const testimonials = [
 		{
@@ -382,7 +378,7 @@
 					</div>
 				</div>
 				<div class="animate-fadeInUp">
-					<div class="relative overflow-hidden">
+					<div class="relative overflow-hidden rounded-3xl">
 						<img
 							src="/images/foto-owner.png"
 							alt="Tentang AMFlooring"
@@ -412,144 +408,171 @@
 				</p>
 			</div>
 
-			<div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-				<!-- Card 1 -->
+			<!-- Grid dengan 2 kolom di sm, 3 di md+ -->
+			<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+				<!-- Card Template -->
+				<!-- Reuse style dan ubah data sesuai kebutuhan -->
+
+				<!-- Card 1 - Futsal -->
 				<div
-					class="group transform overflow-hidden bg-white shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
-					style="border-radius: 2rem 0.5rem 2rem 0.5rem;"
+					class="group transform overflow-hidden rounded-xl bg-white text-sm shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl sm:text-base"
 				>
-					<div class="relative overflow-hidden" style="border-radius: 2rem 0.5rem 0 0;">
+					<div class="relative overflow-hidden rounded-t-xl">
 						<img
 							src="/images/lapangan-futsal.webp"
 							alt="Lapangan Futsal"
-							class="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+							class="h-44 w-full object-cover transition-transform duration-500 group-hover:scale-[1.05] sm:h-48"
 						/>
 						<div
 							class="absolute inset-0 bg-gradient-to-t from-emerald-600/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
 						></div>
 					</div>
-					<div class="p-8">
-						<h3
-							class="mb-3 text-2xl font-bold text-gray-800 transition-colors duration-300 group-hover:text-emerald-600"
-						>
+					<div class="p-5 sm:p-6">
+						<h3 class="mb-2 text-xl font-bold text-gray-800 group-hover:text-emerald-600">
 							Lapangan Futsal
 						</h3>
-						<p class="mb-6 leading-relaxed text-gray-600">
-							Desain dan pembangunan lapangan futsal standar internasional dengan permukaan
-							berkualitas tinggi.
+						<p class="mb-4 text-gray-600">
+							Desain dan pembangunan lapangan futsal standar internasional.
 						</p>
-						<ul class="mb-6 space-y-2 text-sm text-gray-500">
-							<li class="flex items-center space-x-2">
-								<span class="h-2 w-2 rounded-full bg-emerald-500"></span>
-								<span>Rumput sintetis premium</span>
+						<ul class="mb-4 space-y-1 text-sm text-gray-500">
+							<li class="flex items-center">
+								<span class="mr-2 h-2 w-2 rounded-full bg-emerald-500"></span>Rumput sintetis
+								premium
 							</li>
-							<li class="flex items-center space-x-2">
-								<span class="h-2 w-2 rounded-full bg-emerald-500"></span>
-								<span>Sistem drainase optimal</span>
+							<li class="flex items-center">
+								<span class="mr-2 h-2 w-2 rounded-full bg-emerald-500"></span>Sistem drainase
+								optimal
 							</li>
-							<li class="flex items-center space-x-2">
-								<span class="h-2 w-2 rounded-full bg-emerald-500"></span>
-								<span>Pencahayaan LED</span>
+							<li class="flex items-center">
+								<span class="mr-2 h-2 w-2 rounded-full bg-emerald-500"></span>Pencahayaan LED
 							</li>
 						</ul>
 						<a
 							href="/layanan/futsal"
-							class="inline-flex w-full transform items-center justify-center rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-[1.02] hover:from-emerald-700 hover:to-teal-700"
+							class="inline-flex w-full justify-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 px-4 py-2 font-semibold text-white transition-all hover:from-emerald-700 hover:to-teal-700"
 						>
-							Lihat Detail Spesifikasi
+							Lihat Detail
 						</a>
 					</div>
 				</div>
 
-				<!-- Card 2 -->
+				<!-- Card 2 - Basket -->
 				<div
-					class="group transform overflow-hidden rounded-3xl bg-white shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
+					class="group transform overflow-hidden rounded-xl bg-white text-sm shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl sm:text-base"
 				>
-					<div class="relative overflow-hidden rounded-t-3xl">
+					<div class="relative overflow-hidden rounded-t-xl">
 						<img
 							src="/images/lapangan-basket.jpg"
 							alt="Lapangan Basket"
-							class="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+							class="h-44 w-full object-cover transition-transform duration-500 group-hover:scale-[1.05] sm:h-48"
 						/>
 						<div
 							class="absolute inset-0 bg-gradient-to-t from-amber-600/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
 						></div>
 					</div>
-					<div class="p-8">
-						<h3
-							class="mb-3 text-2xl font-bold text-gray-800 transition-colors duration-300 group-hover:text-amber-600"
-						>
+					<div class="p-5 sm:p-6">
+						<h3 class="mb-2 text-xl font-bold text-gray-800 group-hover:text-amber-600">
 							Lapangan Basket
 						</h3>
-						<p class="mb-6 leading-relaxed text-gray-600">
-							Permukaan berkualitas dan sistem pencahayaan terbaik untuk pengalaman bermain optimal.
-						</p>
-						<ul class="mb-6 space-y-2 text-sm text-gray-500">
-							<li class="flex items-center space-x-2">
-								<span class="h-2 w-2 rounded-full bg-amber-500"></span>
-								<span>Lantai parket profesional</span>
+						<p class="mb-4 text-gray-600">Permukaan berkualitas dan sistem pencahayaan terbaik.</p>
+						<ul class="mb-4 space-y-1 text-sm text-gray-500">
+							<li class="flex items-center">
+								<span class="mr-2 h-2 w-2 rounded-full bg-amber-500"></span>Lantai parket
+								profesional
 							</li>
-							<li class="flex items-center space-x-2">
-								<span class="h-2 w-2 rounded-full bg-amber-500"></span>
-								<span>Ring standar FIBA</span>
+							<li class="flex items-center">
+								<span class="mr-2 h-2 w-2 rounded-full bg-amber-500"></span>Ring standar FIBA
 							</li>
-							<li class="flex items-center space-x-2">
-								<span class="h-2 w-2 rounded-full bg-amber-500"></span>
-								<span>Marking presisi</span>
+							<li class="flex items-center">
+								<span class="mr-2 h-2 w-2 rounded-full bg-amber-500"></span>Marking presisi
 							</li>
 						</ul>
 						<a
 							href="/layanan/basket"
-							class="inline-flex w-full transform items-center justify-center rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-[1.02] hover:from-amber-600 hover:to-orange-600"
+							class="inline-flex w-full justify-center rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 px-4 py-2 font-semibold text-white transition-all hover:from-amber-600 hover:to-orange-600"
 						>
-							Lihat Detail Spesifikasi
+							Lihat Detail
 						</a>
 					</div>
 				</div>
 
-				<!-- Card 3 -->
+				<!-- Card 3 - Badminton -->
 				<div
-					class="group transform overflow-hidden bg-white shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
-					style="border-radius: 0.5rem 2rem 0.5rem 2rem;"
+					class="group transform overflow-hidden rounded-xl bg-white text-sm shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl sm:text-base"
 				>
-					<div class="relative overflow-hidden" style="border-radius: 0.5rem 2rem 0 0;">
+					<div class="relative overflow-hidden rounded-t-xl">
 						<img
 							src="/images/lapangan-badminton.png"
 							alt="Lapangan Badminton"
-							class="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+							class="h-44 w-full object-cover transition-transform duration-500 group-hover:scale-[1.05] sm:h-48"
 						/>
 						<div
 							class="absolute inset-0 bg-gradient-to-t from-rose-600/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
 						></div>
 					</div>
-					<div class="p-8">
-						<h3
-							class="mb-3 text-2xl font-bold text-gray-800 transition-colors duration-300 group-hover:text-rose-600"
-						>
+					<div class="p-5 sm:p-6">
+						<h3 class="mb-2 text-xl font-bold text-gray-800 group-hover:text-rose-600">
 							Lapangan Badminton
 						</h3>
-						<p class="mb-6 leading-relaxed text-gray-600">
-							Konstruksi indoor dan outdoor dengan material anti-slip dan ventilasi optimal.
-						</p>
-						<ul class="mb-6 space-y-2 text-sm text-gray-500">
-							<li class="flex items-center space-x-2">
-								<span class="h-2 w-2 rounded-full bg-rose-500"></span>
-								<span>Lantai karet anti-slip</span>
+						<p class="mb-4 text-gray-600">Indoor dan outdoor dengan material anti-slip terbaik.</p>
+						<ul class="mb-4 space-y-1 text-sm text-gray-500">
+							<li class="flex items-center">
+								<span class="mr-2 h-2 w-2 rounded-full bg-rose-500"></span>Lantai karet anti-slip
 							</li>
-							<li class="flex items-center space-x-2">
-								<span class="h-2 w-2 rounded-full bg-rose-500"></span>
-								<span>Net berkualitas tinggi</span>
+							<li class="flex items-center">
+								<span class="mr-2 h-2 w-2 rounded-full bg-rose-500"></span>Net berkualitas tinggi
 							</li>
-							<li class="flex items-center space-x-2">
-								<span class="h-2 w-2 rounded-full bg-rose-500"></span>
-								<span>Sistem ventilasi modern</span>
+							<li class="flex items-center">
+								<span class="mr-2 h-2 w-2 rounded-full bg-rose-500"></span>Ventilasi modern
 							</li>
 						</ul>
 						<a
 							href="/layanan/badminton"
-							class="inline-flex w-full transform items-center justify-center rounded-xl bg-gradient-to-r from-rose-500 to-pink-500 px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-[1.02] hover:from-rose-600 hover:to-pink-600"
+							class="inline-flex w-full justify-center rounded-lg bg-gradient-to-r from-rose-500 to-pink-500 px-4 py-2 font-semibold text-white transition-all hover:from-rose-600 hover:to-pink-600"
 						>
-							Lihat Detail Spesifikasi
+							Lihat Detail
+						</a>
+					</div>
+				</div>
+
+				<!-- Card 4 - Mini Soccer -->
+				<div
+					class="group transform overflow-hidden rounded-xl bg-white text-sm shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl sm:text-base"
+				>
+					<div class="relative overflow-hidden rounded-t-xl">
+						<img
+							src="/images/lapangan-minisoccer.jpg"
+							alt="Lapangan Mini Soccer"
+							class="h-44 w-full object-cover transition-transform duration-500 group-hover:scale-[1.05] sm:h-48"
+						/>
+						<div
+							class="absolute inset-0 bg-gradient-to-t from-indigo-600/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+						></div>
+					</div>
+					<div class="p-5 sm:p-6">
+						<h3 class="mb-2 text-xl font-bold text-gray-800 group-hover:text-indigo-600">
+							Lapangan Mini Soccer
+						</h3>
+						<p class="mb-4 text-gray-600">
+							Ukuran lapangan yang ideal untuk komunitas dan sekolah sepak bola.
+						</p>
+						<ul class="mb-4 space-y-1 text-sm text-gray-500">
+							<li class="flex items-center">
+								<span class="mr-2 h-2 w-2 rounded-full bg-indigo-500"></span>Rumput sintetis FIFA
+								Approved
+							</li>
+							<li class="flex items-center">
+								<span class="mr-2 h-2 w-2 rounded-full bg-indigo-500"></span>Area aman untuk anak
+							</li>
+							<li class="flex items-center">
+								<span class="mr-2 h-2 w-2 rounded-full bg-indigo-500"></span>Penerangan LED
+							</li>
+						</ul>
+						<a
+							href="/layanan/minisoccer"
+							class="inline-flex w-full justify-center rounded-lg bg-gradient-to-r from-indigo-500 to-blue-500 px-4 py-2 font-semibold text-white transition-all hover:from-indigo-600 hover:to-blue-600"
+						>
+							Lihat Detail
 						</a>
 					</div>
 				</div>
@@ -600,23 +623,29 @@
 	<section id="visi" class="overflow-hidden bg-gradient-to-br from-gray-50 to-emerald-50 py-20">
 		<div class="mx-auto max-w-7xl px-4">
 			<div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+				<!-- Gambar 4 buah, 2 per baris -->
 				<div class="order-2 lg:order-1">
-					<div class="relative overflow-hidden">
-						<img
-							src="https://source.unsplash.com/600x400/?team,sport"
-							alt="Visi Misi"
-							class="h-auto w-full transform shadow-2xl transition-transform duration-500 hover:scale-[1.02]"
-							style="border-radius: 3rem 1rem 3rem 1rem;"
-						/>
-						<div
-							class="absolute -right-4 -bottom-4 hidden h-20 w-20 bg-gradient-to-br from-emerald-400 to-teal-500 opacity-20 md:block"
-							style="border-radius: 2rem 0.5rem 2rem 0.5rem;"
-						></div>
-						<div
-							class="absolute -top-4 -left-4 hidden h-16 w-16 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 opacity-30 md:block"
-						></div>
+					<div class="grid grid-cols-2 gap-4">
+						{#each ['foto-1.png', 'foto-2.png', 'foto-3.png', 'foto-4.png'] as img, i}
+							<!-- Tentukan radius berbeda untuk setiap indeks -->
+							<div
+								class="relative overflow-hidden shadow-xl transition-transform duration-500 hover:scale-[1.03]"
+								class:rounded-tl-[2rem]={i === 0}
+								class:rounded-br-[2rem]={i === 1}
+								class:rounded-tr-[3rem]={i === 2}
+								class:rounded-bl-[3rem]={i === 3}
+							>
+								<img src={`/images/${img}`} alt="Foto Visi Misi" class="h-auto w-full" />
+								<div
+									class="absolute -right-2 -bottom-2 hidden h-10 w-10 bg-gradient-to-br from-emerald-400 to-teal-500 opacity-20 md:block"
+									style="border-radius: 1.5rem 0.5rem 1.5rem 0.5rem;"
+								></div>
+							</div>
+						{/each}
 					</div>
 				</div>
+
+				<!-- Teks Visi Misi -->
 				<div class="order-1 lg:order-2">
 					<div class="mb-12">
 						<h2 class="mb-6 text-4xl font-bold text-gray-800">
@@ -683,38 +712,39 @@
 				</div>
 			</div>
 
-			<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+			<!-- Grid 2 kolom di mobile -->
+			<div class="grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-4">
 				{#each contactInfo as contact, i}
 					<a
 						href={contact.link}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="group transform rounded-2xl border border-gray-100 bg-gradient-to-br from-white to-gray-50 p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+						class="group transform rounded-xl border border-gray-100 bg-gradient-to-br from-white to-gray-50 p-3 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-6"
 						style="animation-delay: {i * 0.1}s"
 					>
-						<div class="mb-4 flex justify-center">
+						<div class="mb-2 flex justify-center sm:mb-4">
 							<div
-								class="animate-float flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-100 to-teal-100 text-2xl transition-transform duration-300 group-hover:scale-[1.05]"
+								class="animate-float flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-100 to-teal-100 text-xl transition-transform duration-300 group-hover:scale-[1.05] sm:h-16 sm:w-16 sm:text-2xl"
 							>
 								{contact.icon}
 							</div>
 						</div>
 						<div class="text-center">
 							<h3
-								class="mb-2 text-lg font-bold text-gray-800 transition-colors duration-300 group-hover:text-emerald-600"
+								class="mb-1 text-sm font-bold text-gray-800 transition-colors duration-300 group-hover:text-emerald-600 sm:mb-2 sm:text-lg"
 							>
 								{contact.title}
 							</h3>
-							<p class="mb-2 text-sm font-medium break-words text-gray-700 sm:text-base">
+							<p class="mb-1 text-xs font-medium break-words text-gray-700 sm:text-sm">
 								{contact.value}
 							</p>
-							<p class="text-xs text-gray-500 sm:text-sm">
+							<p class="text-[10px] text-gray-500 sm:text-xs">
 								{contact.desc}
 							</p>
 						</div>
-						<div class="mt-4 flex justify-center">
+						<div class="mt-2 flex justify-center sm:mt-4">
 							<div
-								class="h-1 w-0 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 transition-all duration-300 group-hover:w-12"
+								class="h-1 w-0 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 transition-all duration-300 group-hover:w-8 sm:group-hover:w-12"
 							></div>
 						</div>
 					</a>
