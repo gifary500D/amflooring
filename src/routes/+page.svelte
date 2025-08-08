@@ -270,7 +270,9 @@
 
 <main class="overflow-hidden pt-16">
 	<!-- Header Slider with Enhanced Parallax -->
-	<section id="home" class="relative h-[85vh] min-h-[600px] overflow-hidden">
+
+	<!-- Enhanced responsive slider section -->
+	<section id="home" class="relative h-[85vh] min-h-[500px] overflow-hidden sm:min-h-[600px]">
 		{#each slides as slide, i}
 			<div
 				class="absolute inset-0 transition-all duration-1000 {current === i
@@ -278,7 +280,15 @@
 					: 'opacity-0'}"
 				style="transform: translateY({current === i ? parallaxOffset : 0}px)"
 			>
-				<img src={slide} alt="Slide {i + 1}" class="h-full w-full scale-110 object-cover" />
+				<!-- Responsive image with better mobile handling -->
+				<img
+					src={slide}
+					alt="Slide {i + 1}"
+					class="h-full w-full scale-100
+					   object-cover object-center
+					   transition-transform duration-700
+					   sm:scale-110 sm:object-center"
+				/>
 			</div>
 		{/each}
 
@@ -581,7 +591,7 @@
 		</div>
 	</section>
 
-	<!-- Enhanced Testimonials -->
+	<!-- Fixed testimonials section -->
 	<section class="overflow-hidden bg-white py-20" data-section="testimonials">
 		<div class="mx-auto max-w-7xl px-4">
 			<div
@@ -603,7 +613,7 @@
 				{#each testimonials as testimonial, i}
 					<div
 						class="group animate-on-scroll transform rounded-2xl bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 p-6 shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-emerald-500/10"
-						class:animate-slideInUp={animatedSections['testimonials']}
+						class:animate-fadeInUp={animatedSections['testimonials']}
 						style="animation-delay: {i * 0.2}s"
 					>
 						<div class="mb-4 flex">
@@ -774,31 +784,31 @@
 			</div>
 
 			<!-- Enhanced Contact Grid -->
-			<div class="mb-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+			<div class="mb-16 grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-4">
 				{#each contactInfo as contact, i}
 					<a
 						href={contact.link}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="group animate-on-scroll transform rounded-2xl border border-emerald-100 bg-gradient-to-br from-white to-emerald-50 p-6 shadow-lg transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:shadow-emerald-500/10"
+						class="group animate-on-scroll transform rounded-xl border border-emerald-100 bg-gradient-to-br from-white to-emerald-50 p-4 shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-emerald-500/10"
 						class:animate-bounceIn={animatedSections['contact']}
 						style="animation-delay: {i * 0.1}s"
 					>
-						<div class="mb-4 flex justify-center">
+						<div class="mb-3 flex justify-center">
 							<div
-								class="animate-float flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-100 to-teal-100 text-2xl shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:from-emerald-200 group-hover:to-teal-200"
+								class="animate-float flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-100 to-teal-100 text-xl shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:from-emerald-200 group-hover:to-teal-200"
 							>
 								{contact.icon}
 							</div>
 						</div>
 						<div class="text-center">
 							<h3
-								class="mb-2 text-lg font-bold text-gray-800 transition-colors duration-300 group-hover:text-emerald-600"
+								class="mb-1 text-base font-bold text-gray-800 transition-colors duration-300 group-hover:text-emerald-600"
 							>
 								{contact.title}
 							</h3>
 							<p
-								class="mb-2 text-sm font-medium break-words text-gray-700 transition-colors duration-300 group-hover:text-gray-900"
+								class="mb-1 text-xs font-medium break-words text-gray-700 transition-colors duration-300 group-hover:text-gray-900"
 							>
 								{contact.value}
 							</p>
@@ -808,9 +818,9 @@
 								{contact.desc}
 							</p>
 						</div>
-						<div class="mt-4 flex justify-center">
+						<div class="mt-3 flex justify-center">
 							<div
-								class="h-1 w-0 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 transition-all duration-500 group-hover:w-16"
+								class="h-1 w-0 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 transition-all duration-500 group-hover:w-12"
 							></div>
 						</div>
 					</a>
@@ -892,7 +902,7 @@
 						/>
 					</div>
 					<h3
-						class="animate-gradient bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-3xl font-black text-transparent"
+						class="animate-gradient bg-gradient-to-r from-red-600 via-teal-400 to-cyan-400 bg-clip-text text-3xl font-black text-transparent"
 					>
 						AMFlooring
 					</h3>

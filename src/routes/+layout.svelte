@@ -24,7 +24,7 @@
 				/>
 			</div>
 			<h1
-				class="bg-gradient-to-r from-emerald-600 to-teal-700 bg-clip-text text-xl font-bold text-transparent"
+				class="bg-gradient-to-r from-red-600 to-sky-700 bg-clip-text text-xl font-bold text-transparent"
 			>
 				AMFlooring
 			</h1>
