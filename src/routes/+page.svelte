@@ -280,19 +280,19 @@
 					: 'opacity-0'}"
 				style="transform: translateY({current === i ? parallaxOffset : 0}px)"
 			>
-				<!-- Responsive image with better mobile handling -->
+				<!-- Gambar responsif untuk slider -->
 				<img
 					src={slide}
 					alt="Slide {i + 1}"
 					class="h-full w-full scale-100
-					   object-cover object-center
-					   transition-transform duration-700
-					   sm:scale-110 sm:object-center"
+				   object-cover object-center
+				   transition-transform duration-700
+				   sm:scale-110 sm:object-center"
 				/>
 			</div>
 		{/each}
 
-		<!-- Enhanced overlay with animated gradient -->
+		<!-- Overlay gradasi animasi -->
 		<div class="absolute inset-0">
 			<div
 				class="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-emerald-900/40 to-slate-900/80"
@@ -302,31 +302,34 @@
 			></div>
 		</div>
 
+		<!-- Konten utama slider -->
 		<div class="absolute inset-0 flex items-center justify-center px-4">
 			<div class="animate-fadeInUp max-w-5xl text-center">
 				<div class="mb-8">
+					<!-- Judul utama -->
 					<h1 class="mb-6 text-3xl leading-tight font-black text-white sm:text-5xl lg:text-7xl">
-						Solusi Lapangan<br />
+						Best Sports<br />
 						<span
 							class="animate-gradient bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent"
 						>
-							Olahraga Terbaik
+							Field Solutions
 						</span>
 					</h1>
+					<!-- Deskripsi singkat -->
 					<p
 						class="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-gray-200 sm:text-xl lg:text-2xl"
 					>
-						Wujudkan lapangan olahraga impian Anda dengan kualitas internasional dan pelayanan
-						terpercaya
+						Bring your dream sports field to life with international quality and trusted service.
 					</p>
 				</div>
 
+				<!-- Tombol aksi -->
 				<div class="flex flex-col justify-center gap-4 sm:flex-row">
 					<a
 						href="#layanan"
 						class="group relative transform overflow-hidden rounded-full bg-gradient-to-r from-emerald-600 to-teal-600 px-8 py-4 font-bold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-emerald-500/25"
 					>
-						<span class="relative z-10">🏆 Lihat Layanan</span>
+						<span class="relative z-10">🏆 View Services</span>
 						<div
 							class="absolute inset-0 bg-gradient-to-r from-emerald-700 to-teal-700 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
 						></div>
@@ -335,30 +338,30 @@
 						href="#kontak"
 						class="group transform rounded-full border-2 border-white/80 bg-white/10 px-8 py-4 font-bold text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white hover:text-emerald-600"
 					>
-						💬 Konsultasi Gratis
+						💬 Free Consultation
 					</a>
 				</div>
 
-				<!-- Trust indicators -->
-				<div class="mt-12 flex flex-wrap justify-center gap-8 text-sm text-gray-300">
+				<!-- Indikator kepercayaan -->
+				<div class="mt-8 mb-20 flex flex-wrap justify-center gap-8 text-sm text-gray-300">
 					<div class="flex items-center space-x-2">
 						<div class="h-2 w-2 rounded-full bg-emerald-400"></div>
-						<span>10+ Tahun Pengalaman</span>
+						<span>10+ Years Experience</span>
 					</div>
 					<div class="flex items-center space-x-2">
 						<div class="h-2 w-2 rounded-full bg-teal-400"></div>
-						<span>500+ Proyek Selesai</span>
+						<span>500+ Projects Completed</span>
 					</div>
 					<div class="flex items-center space-x-2">
 						<div class="h-2 w-2 rounded-full bg-cyan-400"></div>
-						<span>Garansi 5 Tahun</span>
+						<span>5-Year Warranty</span>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- Enhanced Slider Indicators -->
-		<div class="absolute bottom-8 left-1/2 flex -translate-x-1/2 transform space-x-3">
+		<!-- Slider Indicators -->
+		<div class="absolute bottom-2 left-1/2 flex -translate-x-1/2 transform space-x-3">
 			{#each slides as _, i}
 				<button
 					class="group relative h-3 w-8 rounded-full transition-all duration-300 {current === i
@@ -591,7 +594,7 @@
 		</div>
 	</section>
 
-	<!-- Fixed testimonials section -->
+	<!-- testimonials section with navigation -->
 	<section class="overflow-hidden bg-white py-20" data-section="testimonials">
 		<div class="mx-auto max-w-7xl px-4">
 			<div
@@ -606,7 +609,28 @@
 				<h2 class="mb-4 text-3xl font-black text-gray-800 sm:text-4xl lg:text-5xl">
 					Apa Kata <span class="text-emerald-600">Klien Kami</span>
 				</h2>
-				<p class="text-lg text-gray-600">Kepuasan klien adalah prioritas utama kami</p>
+				<p class="mb-6 text-lg text-gray-600">Kepuasan klien adalah prioritas utama kami</p>
+
+				<!-- Navigation Button to Full Testimonials Page -->
+				<a
+					href="/testimonials"
+					class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-500/25"
+				>
+					<span>Lihat Semua Testimoni & Projek</span>
+					<svg
+						class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
+						fill="none"
+						stroke="currentColor"
+						viewBox="0 0 24 24"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M17 8l4 4m0 0l-4 4m4-4H3"
+						/>
+					</svg>
+				</a>
 			</div>
 
 			<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
