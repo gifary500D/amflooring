@@ -533,7 +533,7 @@
 			<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
 				{#each [{ name: 'Lapangan Futsal', image: '/images/lapangan-futsal.webp', color: 'emerald', features: ['Rumput sintetis premium', 'Sistem drainase optimal', 'Pencahayaan LED'], link: '/layanan/futsal', icon: '⚽' }, { name: 'Lapangan Basket', image: '/images/lapangan-basket.jpg', color: 'amber', features: ['Lantai parket profesional', 'Ring standar FIBA', 'Marking presisi'], link: '/layanan/basket', icon: '🏀' }, { name: 'Lapangan Badminton', image: '/images/lapangan-badminton.png', color: 'rose', features: ['Lantai karet anti-slip', 'Net berkualitas tinggi', 'Ventilasi modern'], link: '/layanan/badminton', icon: '🏸' }, { name: 'Lapangan Mini Soccer', image: '/images/lapangan-minisoccer.jpg', color: 'indigo', features: ['Rumput sintetis FIFA Approved', 'Area aman untuk anak', 'Penerangan LED'], link: '/layanan/minisoccer', icon: '⚽' }] as service, i}
 					<div
-						class="group animate-on-scroll transform overflow-hidden rounded-2xl bg-white shadow-lg transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl"
+						class="group animate-on-scroll flex transform cursor-pointer flex-col overflow-hidden rounded-2xl bg-white shadow-lg transition-all duration-500 hover:-translate-y-3 hover:rotate-1 hover:shadow-2xl active:scale-95 active:rotate-0"
 						class:animate-scaleIn={animatedSections['services']}
 						style="animation-delay: {i * 0.2}s"
 					>
@@ -551,18 +551,9 @@
 							>
 								{service.icon}
 							</div>
-							<div
-								class="absolute right-4 bottom-4 translate-y-2 transform opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
-							>
-								<span
-									class="inline-flex items-center rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-gray-800"
-								>
-									Lihat Detail →
-								</span>
-							</div>
 						</div>
 
-						<div class="p-6">
+						<div class="flex flex-1 flex-col p-6">
 							<h3
 								class="mb-3 text-xl font-bold text-gray-800 group-hover:text-{service.color}-600 transition-colors duration-300"
 							>
@@ -580,11 +571,19 @@
 
 							<a
 								href={service.link}
-								class="group/btn relative w-full overflow-hidden rounded-xl bg-gradient-to-r from-{service.color}-500 to-{service.color}-600 px-6 py-3 font-bold text-white transition-all duration-300 hover:shadow-lg hover:shadow-{service.color}-500/25 flex items-center justify-center"
+								class="group/btn relative mt-auto self-end overflow-hidden rounded-xl
+							bg-gradient-to-r from-{service.color}-500 to-{service.color}-600
+							px-6 py-3 font-bold text-white
+							transition-all duration-300
+							hover:shadow-lg hover:shadow-{service.color}-500/25
+							hover:scale-105 active:scale-95"
 							>
 								<span class="relative z-10">Lihat Detail</span>
 								<div
-									class="absolute inset-0 bg-gradient-to-r from-{service.color}-600 to-{service.color}-700 opacity-0 transition-opacity duration-300 group-hover/btn:opacity-100"
+									class="absolute inset-0 rounded-xl
+								bg-gradient-to-r from-{service.color}-600 to-{service.color}-700
+								opacity-0 transition-opacity duration-300
+								group-hover/btn:opacity-100"
 								></div>
 							</a>
 						</div>
@@ -932,56 +931,99 @@
 					</h3>
 				</div>
 				<p class="mb-6 max-w-md text-lg leading-relaxed text-gray-300">
-					Spesialis pembangunan dan renovasi lapangan olahraga dengan pengalaman lebih dari 10
-					tahun. Wujudkan lapangan impian Anda bersama kami.
+					Sports field construction and renovation specialists with over 10 years of experience.
+					Make your dream field come true with us.
 				</p>
 
-				<!-- Enhanced Social Media -->
+				<!-- Enhanced Social Media with SVG Icons -->
 				<div class="mb-6">
 					<h4 class="mb-4 text-sm font-semibold tracking-wide text-emerald-400 uppercase">
-						Ikuti Kami
+						Follow Us
 					</h4>
 					<div class="flex flex-wrap gap-3">
-						{#each [{ name: 'WhatsApp', icon: '📱', href: 'https://wa.me/6282xxxxxxxx', color: 'green' }, { name: 'Instagram', icon: '📷', href: '#', color: 'pink' }, { name: 'Facebook', icon: '👥', href: '#', color: 'blue' }, { name: 'YouTube', icon: '📺', href: '#', color: 'red' }, { name: 'TikTok', icon: '🎵', href: '#', color: 'black' }] as social}
-							<a
-								href={social.href}
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label={social.name}
-								class="group flex h-12 w-12 items-center justify-center rounded-xl bg-slate-700 text-xl transition-all duration-300 hover:scale-110 hover:bg-{social.color}-600 hover:shadow-lg hover:shadow-{social.color}-500/25"
-							>
-								{social.icon}
-							</a>
-						{/each}
-					</div>
-				</div>
-
-				<!-- Newsletter Signup -->
-				<div class="max-w-md">
-					<h4 class="mb-3 text-sm font-semibold tracking-wide text-emerald-400 uppercase">
-						📧 Newsletter
-					</h4>
-					<p class="mb-4 text-sm text-gray-400">Dapatkan tips dan promo terbaru dari kami</p>
-					<div class="flex gap-2">
-						<input
-							type="email"
-							placeholder="Email Anda"
-							class="flex-1 rounded-lg border border-slate-600 bg-slate-700 px-4 py-2 text-white placeholder-gray-400 transition-colors duration-300 focus:border-emerald-500 focus:outline-none"
-						/>
-						<button
-							class="rounded-lg bg-gradient-to-r from-emerald-500 to-teal-600 px-4 py-2 font-semibold text-white transition-all duration-300 hover:from-emerald-600 hover:to-teal-700 hover:shadow-lg"
+						<!-- Instagram -->
+						<a
+							href=""
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="Instagram"
+							class="group flex h-12 w-12 items-center justify-center rounded-xl bg-slate-700 transition-all duration-300 hover:scale-110 hover:bg-gradient-to-br hover:from-purple-500 hover:to-pink-500 hover:shadow-lg hover:shadow-pink-500/25"
 						>
-							Subscribe
-						</button>
+							<svg class="h-6 w-6 fill-current text-white" viewBox="0 0 24 24">
+								<path
+									d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+								/>
+							</svg>
+						</a>
+
+						<!-- Facebook -->
+						<a
+							href=""
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="Facebook"
+							class="group flex h-12 w-12 items-center justify-center rounded-xl bg-slate-700 transition-all duration-300 hover:scale-110 hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/25"
+						>
+							<svg class="h-6 w-6 fill-current text-white" viewBox="0 0 24 24">
+								<path
+									d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+								/>
+							</svg>
+						</a>
+
+						<!-- YouTube -->
+						<a
+							href=""
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="YouTube"
+							class="group flex h-12 w-12 items-center justify-center rounded-xl bg-slate-700 transition-all duration-300 hover:scale-110 hover:bg-red-600 hover:shadow-lg hover:shadow-red-500/25"
+						>
+							<svg class="h-6 w-6 fill-current text-white" viewBox="0 0 24 24">
+								<path
+									d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+								/>
+							</svg>
+						</a>
+
+						<!-- Twitter/X -->
+						<a
+							href=""
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="Twitter"
+							class="group flex h-12 w-12 items-center justify-center rounded-xl bg-slate-700 transition-all duration-300 hover:scale-110 hover:bg-black hover:shadow-lg hover:shadow-gray-500/25"
+						>
+							<svg class="h-5 w-5 fill-current text-white" viewBox="0 0 24 24">
+								<path
+									d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+								/>
+							</svg>
+						</a>
+
+						<!-- Threads -->
+						<a
+							href=""
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="Threads"
+							class="group flex h-12 w-12 items-center justify-center rounded-xl bg-slate-700 transition-all duration-300 hover:scale-110 hover:bg-gradient-to-br hover:from-purple-600 hover:to-pink-600 hover:shadow-lg hover:shadow-purple-500/25"
+						>
+							<svg class="h-6 w-6 fill-current text-white" viewBox="0 0 24 24">
+								<path
+									d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.781 3.631 2.695 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.74-1.80-.365-.467-.835-.8-1.442-.992-.355-.112-.742-.17-1.152-.17-.35 0-.656.05-.918.152-.262.101-.498.249-.708.444-.42.39-.748.973-.925 1.64l-1.95-.484c.264-1.004.694-1.86 1.291-2.568.598-.708 1.355-1.26 2.270-1.657.915-.397 1.942-.595 3.08-.595.579 0 1.124.044 1.638.133.514.089.99.224 1.431.405 1.04.425 1.916 1.1 2.628 2.024.712.925 1.067 2.047 1.067 3.368v.024c.02 2.12-.88 3.854-2.256 5.178C17.663 23.35 15.492 24 12.199 24h-.013z"
+								/>
+							</svg>
+						</a>
 					</div>
 				</div>
 			</div>
 
 			<!-- Quick Links -->
 			<div>
-				<h4 class="mb-6 text-lg font-bold text-emerald-400">🔗 Tautan Cepat</h4>
+				<h4 class="mb-6 text-lg font-bold text-emerald-400">🔗 Quick Links</h4>
 				<ul class="space-y-3">
-					{#each [{ name: 'Beranda', href: '#home', icon: '🏠' }, { name: 'Tentang Kami', href: '#about', icon: '🏢' }, { name: 'Layanan', href: '#layanan', icon: '⚽' }, { name: 'Visi & Misi', href: '#visi', icon: '🎯' }, { name: 'Kontak', href: '#kontak', icon: '📞' }] as link}
+					{#each [{ name: 'Home', href: '#home', icon: '🏠' }, { name: 'About Us', href: '#about', icon: '🏢' }, { name: 'Services', href: '#layanan', icon: '⚽' }, { name: 'Vision & Mission', href: '#visi', icon: '🎯' }, { name: 'Contact', href: '#kontak', icon: '📞' }] as link}
 						<li>
 							<a
 								href={link.href}
@@ -997,9 +1039,9 @@
 
 			<!-- Services -->
 			<div>
-				<h4 class="mb-6 text-lg font-bold text-emerald-400">⚽ Layanan Kami</h4>
+				<h4 class="mb-6 text-lg font-bold text-emerald-400">⚽ Our Services</h4>
 				<ul class="space-y-3">
-					{#each [{ name: 'Lapangan Futsal', icon: '⚽' }, { name: 'Lapangan Basket', icon: '🏀' }, { name: 'Lapangan Badminton', icon: '🏸' }, { name: 'Lapangan Tenis', icon: '🎾' }, { name: 'Lapangan Voli', icon: '🏐' }] as service}
+					{#each [{ name: 'Futsal Court', icon: '⚽' }, { name: 'Basketball Court', icon: '🏀' }, { name: 'Badminton Court', icon: '🏸' }, { name: 'Tennis Court', icon: '🎾' }, { name: 'Volleyball Court', icon: '🏐' }] as service}
 						<li>
 							<a
 								href="#layanan"
@@ -1017,7 +1059,7 @@
 		<!-- Enhanced Contact Info Footer -->
 		<div class="mt-12 border-t border-slate-700 pt-8">
 			<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-				{#each [{ icon: '📍', label: 'Alamat', value: 'Jl. Olahraga No. 123, Medan', color: 'emerald' }, { icon: '📞', label: 'Telepon', value: '+62 821-xxxx-xxxx', color: 'blue' }, { icon: '✉️', label: 'Email', value: 'info@amflooring.com', color: 'purple' }] as contact}
+				{#each [{ icon: '📍', label: 'Address', value: 'Jl. Olahraga No. 123, Medan', color: 'emerald' }, { icon: '📞', label: 'Phone', value: '+62 821-xxxx-xxxx', color: 'blue' }, { icon: '✉️', label: 'Email', value: 'info@amflooring.com', color: 'purple' }] as contact}
 					<div
 						class="group flex items-center space-x-4 rounded-xl bg-slate-700/50 p-4 transition-all duration-300 hover:bg-slate-700"
 					>
@@ -1039,16 +1081,16 @@
 		<div class="mt-8 border-t border-slate-700 pt-8">
 			<div class="flex flex-col items-center justify-between space-y-4 sm:flex-row sm:space-y-0">
 				<div class="text-center sm:text-left">
-					<p class="text-sm text-gray-400">&copy; 2025 AMFlooring. Semua hak dilindungi.</p>
+					<p class="text-sm text-gray-400">&copy; 2025 AMFlooring. All rights reserved.</p>
 					<p class="text-xs text-gray-500">Dibuat dengan ❤️ untuk masa depan olahraga Indonesia</p>
 				</div>
 				<div class="flex items-center space-x-4 text-xs text-gray-500">
 					<a href="#" class="transition-colors duration-300 hover:text-emerald-400"
-						>Kebijakan Privasi</a
+						>Privacy Policy</a
 					>
 					<span>•</span>
 					<a href="#" class="transition-colors duration-300 hover:text-emerald-400"
-						>Syarat & Ketentuan</a
+						>Terms & Conditions</a
 					>
 				</div>
 			</div>
