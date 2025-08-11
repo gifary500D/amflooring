@@ -479,7 +479,7 @@
 					href="/portfolio"
 					class="rounded-full border-2 border-white px-8 py-4 font-bold text-white transition-all duration-300 hover:bg-white hover:text-emerald-600"
 				>
-					Lihat Portfolio
+					Hubungin Langsung
 				</a>
 			</div>
 		</div>

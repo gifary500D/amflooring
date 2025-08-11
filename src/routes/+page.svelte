@@ -307,7 +307,9 @@
 			<div class="animate-fadeInUp max-w-5xl text-center">
 				<div class="mb-8">
 					<!-- Judul utama -->
-					<h1 class="mb-6 text-3xl leading-tight font-black text-white sm:text-5xl lg:text-7xl">
+					<h1
+						class="mt-22 mb-6 text-3xl leading-tight font-black text-white sm:text-5xl lg:text-7xl"
+					>
 						Best Sports<br />
 						<span
 							class="animate-gradient bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent"
@@ -572,18 +574,30 @@
 							<a
 								href={service.link}
 								class="group/btn relative mt-auto self-end overflow-hidden rounded-xl
-							bg-gradient-to-r from-{service.color}-500 to-{service.color}-600
+							{service.color === 'emerald' ? 'bg-gradient-to-br from-emerald-500 to-emerald-700' : ''}
+							{service.color === 'amber' ? 'bg-gradient-to-br from-amber-500 to-amber-700' : ''}
+							{service.color === 'rose' ? 'bg-gradient-to-br from-rose-500 to-rose-700' : ''}
+							{service.color === 'indigo' ? 'bg-gradient-to-br from-indigo-500 to-indigo-700' : ''}
 							px-6 py-3 font-bold text-white
 							transition-all duration-300
-							hover:shadow-lg hover:shadow-{service.color}-500/25
+							hover:shadow-lg
+							{service.color === 'emerald' ? 'hover:shadow-emerald-500/25' : ''}
+							{service.color === 'amber' ? 'hover:shadow-amber-500/25' : ''}
+							{service.color === 'rose' ? 'hover:shadow-rose-500/25' : ''}
+							{service.color === 'indigo' ? 'hover:shadow-indigo-500/25' : ''}
+							transform hover:-translate-y-0.5
 							hover:scale-105 active:scale-95"
 							>
-								<span class="relative z-10">Lihat Detail</span>
+								<span
+									class="relative z-10 transition-transform duration-200 group-hover/btn:scale-105"
+									>Lihat Detail</span
+								>
 								<div
-									class="absolute inset-0 rounded-xl
-								bg-gradient-to-r from-{service.color}-600 to-{service.color}-700
-								opacity-0 transition-opacity duration-300
-								group-hover/btn:opacity-100"
+									class="absolute inset-0 rounded-xl opacity-0 transition-opacity duration-300 group-hover/btn:opacity-100
+								{service.color === 'emerald' ? 'bg-gradient-to-tl from-emerald-600 to-emerald-400' : ''}
+								{service.color === 'amber' ? 'bg-gradient-to-tl from-amber-600 to-amber-400' : ''}
+								{service.color === 'rose' ? 'bg-gradient-to-tl from-rose-600 to-rose-400' : ''}
+								{service.color === 'indigo' ? 'bg-gradient-to-tl from-indigo-600 to-indigo-400' : ''}"
 								></div>
 							</a>
 						</div>
