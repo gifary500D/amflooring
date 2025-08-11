@@ -295,7 +295,7 @@
 		<!-- Overlay gradasi animasi -->
 		<div class="absolute inset-0">
 			<div
-				class="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-emerald-900/40 to-slate-900/80"
+				class="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-red-900/40 to-slate-900/80"
 			></div>
 			<div
 				class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
@@ -312,7 +312,7 @@
 					>
 						Best Sports<br />
 						<span
-							class="animate-gradient bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent"
+							class="animate-gradient bg-gradient-to-r from-red-400 via-rose-400 to-pink-400 bg-clip-text text-transparent"
 						>
 							Field Solutions
 						</span>
@@ -329,16 +329,16 @@
 				<div class="flex flex-col justify-center gap-4 sm:flex-row">
 					<a
 						href="#layanan"
-						class="group relative transform overflow-hidden rounded-full bg-gradient-to-r from-emerald-600 to-teal-600 px-8 py-4 font-bold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-emerald-500/25"
+						class="group relative transform overflow-hidden rounded-full bg-gradient-to-r from-red-600 to-rose-600 px-8 py-4 font-bold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-red-500/25"
 					>
 						<span class="relative z-10">🏆 View Services</span>
 						<div
-							class="absolute inset-0 bg-gradient-to-r from-emerald-700 to-teal-700 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+							class="absolute inset-0 bg-gradient-to-r from-red-700 to-rose-700 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
 						></div>
 					</a>
 					<a
 						href="#kontak"
-						class="group transform rounded-full border-2 border-white/80 bg-white/10 px-8 py-4 font-bold text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white hover:text-emerald-600"
+						class="group transform rounded-full border-2 border-white/80 bg-white/10 px-8 py-4 font-bold text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white hover:text-red-600"
 					>
 						💬 Free Consultation
 					</a>
@@ -347,15 +347,15 @@
 				<!-- Indikator kepercayaan -->
 				<div class="mt-8 mb-20 flex flex-wrap justify-center gap-8 text-sm text-gray-300">
 					<div class="flex items-center space-x-2">
-						<div class="h-2 w-2 rounded-full bg-emerald-400"></div>
+						<div class="h-2 w-2 rounded-full bg-red-400"></div>
 						<span>10+ Years Experience</span>
 					</div>
 					<div class="flex items-center space-x-2">
-						<div class="h-2 w-2 rounded-full bg-teal-400"></div>
+						<div class="h-2 w-2 rounded-full bg-rose-400"></div>
 						<span>500+ Projects Completed</span>
 					</div>
 					<div class="flex items-center space-x-2">
-						<div class="h-2 w-2 rounded-full bg-cyan-400"></div>
+						<div class="h-2 w-2 rounded-full bg-pink-400"></div>
 						<span>5-Year Warranty</span>
 					</div>
 				</div>
@@ -373,7 +373,7 @@
 				>
 					{#if current === i}
 						<div
-							class="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-400 to-teal-400 opacity-80"
+							class="absolute inset-0 rounded-full bg-gradient-to-r from-red-400 to-rose-400 opacity-80"
 						></div>
 					{/if}
 				</button>
@@ -398,11 +398,11 @@
 
 	<!-- Enhanced Stats Section -->
 	<section
-		class="relative overflow-hidden bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 py-16"
+		class="relative overflow-hidden bg-gradient-to-br from-red-50 via-rose-50 to-pink-50 py-16"
 		data-section="stats"
 	>
 		<div
-			class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%2310b981%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"
+			class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23dc2626%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"
 		></div>
 
 		<div class="relative mx-auto max-w-7xl px-4">
@@ -415,13 +415,13 @@
 					>
 						<div class="group relative">
 							<div
-								class="animate-pulse-custom mb-3 text-2xl font-black text-emerald-600 sm:text-3xl lg:text-4xl"
+								class="animate-pulse-custom mb-3 text-2xl font-black text-red-600 sm:text-3xl lg:text-4xl"
 							>
 								{stat.number}
 							</div>
 							<div class="text-sm font-semibold text-gray-700 sm:text-base">{stat.label}</div>
 							<div
-								class="absolute -inset-4 -z-10 rounded-xl bg-gradient-to-r from-emerald-100 to-teal-100 opacity-0 transition-all duration-300 group-hover:opacity-100"
+								class="absolute -inset-4 -z-10 rounded-xl bg-gradient-to-r from-red-100 to-rose-100 opacity-0 transition-all duration-300 group-hover:opacity-100"
 							></div>
 						</div>
 					</div>
@@ -440,12 +440,12 @@
 				>
 					<div class="mb-6">
 						<span
-							class="mb-4 inline-block rounded-full bg-emerald-100 px-4 py-2 text-sm font-semibold text-emerald-800"
+							class="mb-4 inline-block rounded-full bg-red-100 px-4 py-2 text-sm font-semibold text-red-800"
 						>
 							🏢 Tentang Kami
 						</span>
 						<h2 class="text-3xl leading-tight font-black text-gray-800 sm:text-4xl lg:text-5xl">
-							Membangun <span class="text-emerald-600">Impian</span><br />
+							Membangun <span class="text-red-600">Impian</span><br />
 							Lapangan Anda
 						</h2>
 					</div>
@@ -466,7 +466,7 @@
 					<div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
 						{#each [{ icon: '🏆', title: 'Kualitas Terjamin', desc: 'Standar internasional' }, { icon: '👥', title: 'Tim Profesional', desc: 'Berpengalaman 10+ tahun' }, { icon: '💰', title: 'Harga Kompetitif', desc: 'Sesuai budget Anda' }] as feature, i}
 							<div
-								class="group rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 p-4 transition-all duration-300 hover:from-emerald-100 hover:to-teal-100 hover:shadow-lg"
+								class="group rounded-2xl bg-gradient-to-br from-red-50 to-rose-50 p-4 transition-all duration-300 hover:from-red-100 hover:to-rose-100 hover:shadow-lg"
 								style="animation-delay: {i * 0.1}s"
 							>
 								<div class="mb-2 text-2xl transition-transform duration-300 group-hover:scale-110">
@@ -485,12 +485,12 @@
 				>
 					<div class="group relative">
 						<div
-							class="absolute -inset-4 rounded-3xl bg-gradient-to-r from-emerald-400 to-teal-400 opacity-20 blur-xl transition-opacity duration-300 group-hover:opacity-30"
+							class="absolute -inset-4 rounded-3xl bg-gradient-to-r from-red-400 to-rose-400 opacity-20 blur-xl transition-opacity duration-300 group-hover:opacity-30"
 						></div>
 						<img
 							src="/images/foto-owner.png"
 							alt="Tentang AMFlooring"
-							class="relative h-auto w-full transform rounded-3xl shadow-2xl transition-all duration-500 hover:scale-[1.02] hover:shadow-emerald-500/25"
+							class="relative h-auto w-full transform rounded-3xl shadow-2xl transition-all duration-500 hover:scale-[1.02] hover:shadow-red-500/25"
 						/>
 
 						<!-- Floating elements -->
@@ -498,7 +498,7 @@
 							class="animate-float absolute -top-6 -right-6 h-12 w-12 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 opacity-80"
 						></div>
 						<div
-							class="animate-float absolute -bottom-4 -left-4 h-16 w-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 opacity-30"
+							class="animate-float absolute -bottom-4 -left-4 h-16 w-16 rounded-2xl bg-gradient-to-br from-red-500 to-rose-600 opacity-30"
 							style="animation-delay: 1s"
 						></div>
 					</div>
@@ -607,194 +607,10 @@
 		</div>
 	</section>
 
-	<!-- testimonials section with navigation -->
-	<section class="overflow-hidden bg-white py-20" data-section="testimonials">
-		<div class="mx-auto max-w-7xl px-4">
-			<div
-				class="animate-on-scroll mb-16 text-center"
-				class:animate-fadeInUp={animatedSections['testimonials']}
-			>
-				<span
-					class="mb-4 inline-block rounded-full bg-emerald-100 px-4 py-2 text-sm font-semibold text-emerald-800"
-				>
-					💬 Testimoni
-				</span>
-				<h2 class="mb-4 text-3xl font-black text-gray-800 sm:text-4xl lg:text-5xl">
-					Apa Kata <span class="text-emerald-600">Klien Kami</span>
-				</h2>
-				<p class="mb-6 text-lg text-gray-600">Kepuasan klien adalah prioritas utama kami</p>
-
-				<!-- Navigation Button to Full Testimonials Page -->
-				<a
-					href="/testimonials"
-					class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-500/25"
-				>
-					<span>Lihat Semua Testimoni & Projek</span>
-					<svg
-						class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
-						fill="none"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M17 8l4 4m0 0l-4 4m4-4H3"
-						/>
-					</svg>
-				</a>
-			</div>
-
-			<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-				{#each testimonials as testimonial, i}
-					<div
-						class="group animate-on-scroll transform rounded-2xl bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 p-6 shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-emerald-500/10"
-						class:animate-fadeInUp={animatedSections['testimonials']}
-						style="animation-delay: {i * 0.2}s"
-					>
-						<div class="mb-4 flex">
-							{#each Array(testimonial.rating) as _, starIndex}
-								<span
-									class="transform text-xl text-amber-400 transition-transform duration-300 hover:scale-125"
-									style="animation-delay: {starIndex * 0.1}s"
-								>
-									⭐
-								</span>
-							{/each}
-						</div>
-						<blockquote class="relative mb-6 leading-relaxed text-gray-700 italic">
-							<span class="absolute -top-2 -left-2 text-4xl text-emerald-200">"</span>
-							<span class="relative z-10">{testimonial.text}</span>
-							<span class="absolute -right-2 -bottom-4 text-4xl text-emerald-200">"</span>
-						</blockquote>
-						<div class="flex items-center">
-							<div
-								class="mr-4 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-emerald-500 to-teal-600 font-bold text-white shadow-lg transition-shadow duration-300 group-hover:shadow-emerald-500/25"
-							>
-								{testimonial.name[0]}
-							</div>
-							<div>
-								<h4 class="font-bold text-gray-800">{testimonial.name}</h4>
-								<p class="text-sm text-gray-600">{testimonial.role}</p>
-							</div>
-						</div>
-					</div>
-				{/each}
-			</div>
-		</div>
-	</section>
-
-	<!-- Enhanced Vision & Mission -->
-	<section
-		id="visi"
-		class="overflow-hidden bg-gradient-to-br from-gray-50 via-emerald-50 to-teal-50 py-20"
-		data-section="vision"
-	>
-		<div class="mx-auto max-w-7xl px-4">
-			<div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-				<!-- Enhanced Image Grid -->
-				<div
-					class="animate-on-scroll order-2 lg:order-1"
-					class:animate-slideInLeft={animatedSections['vision']}
-				>
-					<div class="grid grid-cols-2 gap-4">
-						{#each ['foto-1.png', 'foto-2.png', 'foto-3.png', 'foto-4.png'] as img, i}
-							<div
-								class="group relative overflow-hidden shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-2xl"
-								class:rounded-tl-[2rem]={i === 0}
-								class:rounded-br-[2rem]={i === 1}
-								class:rounded-tr-[3rem]={i === 2}
-								class:rounded-bl-[3rem]={i === 3}
-								style="animation-delay: {i * 0.2}s"
-							>
-								<img
-									src={`/images/${img}`}
-									alt="Foto Visi Misi"
-									class="h-auto w-full transition-transform duration-700 group-hover:scale-110"
-								/>
-								<div
-									class="absolute inset-0 bg-gradient-to-t from-emerald-600/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-								></div>
-								<div
-									class="absolute -right-2 -bottom-2 h-8 w-8 bg-gradient-to-br from-emerald-400 to-teal-500 opacity-30 transition-opacity duration-300 group-hover:opacity-60"
-									style="border-radius: 1rem 0.25rem 1rem 0.25rem;"
-								></div>
-							</div>
-						{/each}
-					</div>
-				</div>
-
-				<!-- Enhanced Vision & Mission Content -->
-				<div
-					class="animate-on-scroll order-1 space-y-12 lg:order-2"
-					class:animate-slideInRight={animatedSections['vision']}
-				>
-					<!-- Vision -->
-					<div class="group">
-						<div class="mb-6 flex items-center">
-							<div
-								class="mr-4 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-emerald-500 to-teal-600 text-xl text-white"
-							>
-								🎯
-							</div>
-							<h2 class="text-3xl font-black text-gray-800 sm:text-4xl">
-								<span class="text-emerald-600">Visi</span> Kami
-							</h2>
-						</div>
-						<div
-							class="relative rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 p-6 transition-all duration-300 group-hover:from-emerald-100 group-hover:to-teal-100"
-						>
-							<p class="text-lg leading-relaxed text-gray-700">
-								Menjadi perusahaan terdepan dalam pembangunan dan renovasi lapangan olahraga di
-								Indonesia yang inovatif, berkualitas tinggi, dan terpercaya.
-							</p>
-							<div
-								class="absolute -top-2 -right-2 h-4 w-4 animate-pulse rounded-full bg-emerald-400 opacity-60"
-							></div>
-						</div>
-					</div>
-
-					<!-- Mission -->
-					<div class="group">
-						<div class="mb-6 flex items-center">
-							<div
-								class="mr-4 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-emerald-500 to-teal-600 text-xl text-white"
-							>
-								🚀
-							</div>
-							<h2 class="text-3xl font-black text-gray-800 sm:text-4xl">
-								<span class="text-emerald-600">Misi</span> Kami
-							</h2>
-						</div>
-						<div class="space-y-4">
-							{#each ['Menggunakan material berkualitas tinggi yang ramah lingkungan', 'Memberikan solusi desain lapangan yang inovatif dan sesuai kebutuhan', 'Menjaga kepercayaan dan kepuasan pelanggan sebagai prioritas utama', 'Mengembangkan teknologi terdepan dalam konstruksi lapangan olahraga'] as mission, index}
-								<div
-									class="group/item flex items-start space-x-4 rounded-xl bg-white/50 p-4 transition-all duration-300 hover:bg-white hover:shadow-md"
-								>
-									<div
-										class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-emerald-500 to-teal-600 text-sm font-bold text-white transition-transform duration-300 group-hover/item:scale-110"
-									>
-										{index + 1}
-									</div>
-									<p
-										class="leading-relaxed text-gray-700 transition-colors duration-300 group-hover/item:text-gray-900"
-									>
-										{mission}
-									</p>
-								</div>
-							{/each}
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
 	<!-- Enhanced Contact Section -->
 	<section
 		id="kontak"
-		class="overflow-hidden bg-gradient-to-br from-white via-emerald-50 to-teal-50 py-20"
+		class="overflow-hidden bg-gradient-to-br from-gray-50 via-red-50 to-rose-50 py-20"
 		data-section="contact"
 	>
 		<div class="mx-auto max-w-7xl px-4">
@@ -803,19 +619,19 @@
 				class:animate-fadeInUp={animatedSections['contact']}
 			>
 				<span
-					class="mb-4 inline-block rounded-full bg-emerald-100 px-4 py-2 text-sm font-semibold text-emerald-800"
+					class="mb-4 inline-block rounded-full bg-red-100 px-4 py-2 text-sm font-semibold text-red-800"
 				>
 					📞 Hubungi Kami
 				</span>
 				<h2 class="mb-6 text-3xl font-black text-gray-800 sm:text-4xl lg:text-5xl">
-					Siap Mewujudkan <span class="text-emerald-600">Impian</span><br />
+					Siap Mewujudkan <span class="text-red-600">Impian</span><br />
 					<span class="text-2xl text-gray-600 sm:text-3xl lg:text-4xl">Lapangan Anda?</span>
 				</h2>
 				<p class="mb-4 text-lg text-gray-600">Konsultasi gratis dengan tim ahli kami</p>
 				<div
-					class="inline-flex items-center space-x-2 rounded-full bg-emerald-50 px-4 py-2 text-sm text-emerald-600"
+					class="inline-flex items-center space-x-2 rounded-full bg-red-50 px-4 py-2 text-sm text-red-600"
 				>
-					<div class="h-2 w-2 animate-pulse rounded-full bg-emerald-500"></div>
+					<div class="h-2 w-2 animate-pulse rounded-full bg-red-500"></div>
 					<span>📞 Jam Operasional: Senin - Sabtu (08:00 - 17:00)</span>
 				</div>
 			</div>
@@ -827,20 +643,20 @@
 						href={contact.link}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="group animate-on-scroll transform rounded-xl border border-emerald-100 bg-gradient-to-br from-white to-emerald-50 p-4 shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-emerald-500/10"
+						class="group animate-on-scroll transform rounded-xl border border-red-100 bg-gradient-to-br from-white to-red-50 p-4 shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-500/10"
 						class:animate-bounceIn={animatedSections['contact']}
 						style="animation-delay: {i * 0.1}s"
 					>
 						<div class="mb-3 flex justify-center">
 							<div
-								class="animate-float flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-100 to-teal-100 text-xl shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:from-emerald-200 group-hover:to-teal-200"
+								class="animate-float flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-red-100 to-rose-100 text-xl shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:from-red-200 group-hover:to-rose-200"
 							>
 								{contact.icon}
 							</div>
 						</div>
 						<div class="text-center">
 							<h3
-								class="mb-1 text-base font-bold text-gray-800 transition-colors duration-300 group-hover:text-emerald-600"
+								class="mb-1 text-base font-bold text-gray-800 transition-colors duration-300 group-hover:text-red-600"
 							>
 								{contact.title}
 							</h3>
@@ -857,7 +673,7 @@
 						</div>
 						<div class="mt-3 flex justify-center">
 							<div
-								class="h-1 w-0 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 transition-all duration-500 group-hover:w-12"
+								class="h-1 w-0 rounded-full bg-gradient-to-r from-red-500 to-rose-500 transition-all duration-500 group-hover:w-12"
 							></div>
 						</div>
 					</a>
@@ -885,7 +701,7 @@
 					</a>
 					<a
 						href="tel:+6282xxxxxxxx"
-						class="group inline-flex transform items-center justify-center gap-3 rounded-2xl border-2 border-emerald-600 bg-white px-8 py-4 font-bold text-emerald-600 transition-all duration-300 hover:scale-105 hover:bg-emerald-600 hover:text-white hover:shadow-lg hover:shadow-emerald-500/25"
+						class="group inline-flex transform items-center justify-center gap-3 rounded-2xl border-2 border-red-600 bg-white px-8 py-4 font-bold text-red-600 transition-all duration-300 hover:scale-105 hover:bg-red-600 hover:text-white hover:shadow-lg hover:shadow-red-500/25"
 					>
 						<span class="text-xl">📞</span>
 						<span>Telepon Langsung</span>
@@ -894,7 +710,310 @@
 
 				<!-- Additional CTA Section -->
 				<div
-					class="mx-auto max-w-2xl rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-600 p-6 text-white"
+					class="mx-auto max-w-2xl rounded-2xl bg-gradient-to-r from-red-500 to-rose-600 p-6 text-white"
+				>
+					<h4 class="mb-2 text-xl font-bold">🎁 Promo Spesial Bulan Ini!</h4>
+					<p class="mb-4">Dapatkan konsultasi gratis + diskon 10% untuk proyek pertama Anda</p>
+					<div class="flex flex-col justify-center gap-3 sm:flex-row">
+						<span class="inline-flex items-center rounded-full bg-white/20 px-3 py-1 text-sm"
+							>⏰ Terbatas sampai akhir bulan</span
+						>
+						<span class="inline-flex items-center rounded-full bg-white/20 px-3 py-1 text-sm"
+							>✅ Garansi 5 tahun</span
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- testimonials section with navigation -->
+	<section class="overflow-hidden bg-white py-20" data-section="testimonials">
+		<div class="mx-auto max-w-7xl px-4">
+			<div
+				class="animate-on-scroll mb-16 text-center"
+				class:animate-fadeInUp={animatedSections['testimonials']}
+			>
+				<span
+					class="mb-4 inline-block rounded-full bg-red-100 px-4 py-2 text-sm font-semibold text-red-800"
+				>
+					💬 Testimoni
+				</span>
+				<h2 class="mb-4 text-3xl font-black text-gray-800 sm:text-4xl lg:text-5xl">
+					Apa Kata <span class="text-red-600">Klien Kami</span>
+				</h2>
+				<p class="mb-6 text-lg text-gray-600">Kepuasan klien adalah prioritas utama kami</p>
+
+				<!-- Navigation Button to Full Testimonials Page -->
+				<a
+					href="/testimonials"
+					class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-red-500 to-rose-600 px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-red-500/25"
+				>
+					<span>Lihat Semua Testimoni & Projek</span>
+					<svg
+						class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
+						fill="none"
+						stroke="currentColor"
+						viewBox="0 0 24 24"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M17 8l4 4m0 0l-4 4m4-4H3"
+						/>
+					</svg>
+				</a>
+			</div>
+
+			<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+				{#each testimonials as testimonial, i}
+					<div
+						class="group animate-on-scroll transform rounded-2xl bg-gradient-to-br from-red-50 via-rose-50 to-pink-50 p-6 shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-red-500/10"
+						class:animate-fadeInUp={animatedSections['testimonials']}
+						style="animation-delay: {i * 0.2}s"
+					>
+						<div class="mb-4 flex">
+							{#each Array(testimonial.rating) as _, starIndex}
+								<span
+									class="transform text-xl text-amber-400 transition-transform duration-300 hover:scale-125"
+									style="animation-delay: {starIndex * 0.1}s"
+								>
+									⭐
+								</span>
+							{/each}
+						</div>
+						<blockquote class="relative mb-6 leading-relaxed text-gray-700 italic">
+							<span class="absolute -top-2 -left-2 text-4xl text-red-200">"</span>
+							<span class="relative z-10">{testimonial.text}</span>
+							<span class="absolute -right-2 -bottom-4 text-4xl text-red-200">"</span>
+						</blockquote>
+						<div class="flex items-center">
+							<div
+								class="mr-4 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-red-500 to-rose-600 font-bold text-white shadow-lg transition-shadow duration-300 group-hover:shadow-red-500/25"
+							>
+								{testimonial.name[0]}
+							</div>
+							<div>
+								<h4 class="font-bold text-gray-800">{testimonial.name}</h4>
+								<p class="text-sm text-gray-600">{testimonial.role}</p>
+							</div>
+						</div>
+					</div>
+				{/each}
+			</div>
+		</div>
+	</section>
+
+	<!-- Enhanced Vision & Mission -->
+	<section
+		id="visi"
+		class="overflow-hidden bg-gradient-to-br from-gray-50 via-red-50 to-rose-50 py-20"
+		data-section="vision"
+	>
+		<div class="mx-auto max-w-7xl px-4">
+			<div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+				<!-- Enhanced Image Grid -->
+				<div
+					class="animate-on-scroll order-2 lg:order-1"
+					class:animate-slideInLeft={animatedSections['vision']}
+				>
+					<div class="grid grid-cols-2 gap-4">
+						{#each ['foto-1.png', 'foto-2.png', 'foto-3.png', 'foto-4.png'] as img, i}
+							<div
+								class="group relative overflow-hidden shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-2xl"
+								class:rounded-tl-[2rem]={i === 0}
+								class:rounded-br-[2rem]={i === 1}
+								class:rounded-tr-[3rem]={i === 2}
+								class:rounded-bl-[3rem]={i === 3}
+								style="animation-delay: {i * 0.2}s"
+							>
+								<img
+									src={`/images/${img}`}
+									alt="Foto Visi Misi"
+									class="h-auto w-full transition-transform duration-700 group-hover:scale-110"
+								/>
+								<div
+									class="absolute inset-0 bg-gradient-to-t from-red-600/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+								></div>
+								<div
+									class="absolute -right-2 -bottom-2 h-8 w-8 bg-gradient-to-br from-red-400 to-rose-500 opacity-30 transition-opacity duration-300 group-hover:opacity-60"
+									style="border-radius: 1rem 0.25rem 1rem 0.25rem;"
+								></div>
+							</div>
+						{/each}
+					</div>
+				</div>
+
+				<!-- Enhanced Vision & Mission Content -->
+				<div
+					class="animate-on-scroll order-1 space-y-12 lg:order-2"
+					class:animate-slideInRight={animatedSections['vision']}
+				>
+					<!-- Vision -->
+					<div class="group">
+						<div class="mb-6 flex items-center">
+							<div
+								class="mr-4 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-red-500 to-rose-600 text-xl text-white"
+							>
+								🎯
+							</div>
+							<h2 class="text-3xl font-black text-gray-800 sm:text-4xl">
+								<span class="text-red-600">Visi</span> Kami
+							</h2>
+						</div>
+						<div
+							class="relative rounded-2xl bg-gradient-to-br from-red-50 to-rose-50 p-6 transition-all duration-300 group-hover:from-red-100 group-hover:to-rose-100"
+						>
+							<p class="text-lg leading-relaxed text-gray-700">
+								Menjadi perusahaan terdepan dalam pembangunan dan renovasi lapangan olahraga di
+								Indonesia yang inovatif, berkualitas tinggi, dan terpercaya.
+							</p>
+							<div
+								class="absolute -top-2 -right-2 h-4 w-4 animate-pulse rounded-full bg-red-400 opacity-60"
+							></div>
+						</div>
+					</div>
+
+					<!-- Mission -->
+					<div class="group">
+						<div class="mb-6 flex items-center">
+							<div
+								class="mr-4 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-red-500 to-rose-600 text-xl text-white"
+							>
+								🚀
+							</div>
+							<h2 class="text-3xl font-black text-gray-800 sm:text-4xl">
+								<span class="text-red-600">Misi</span> Kami
+							</h2>
+						</div>
+						<div class="space-y-4">
+							{#each ['Menggunakan material berkualitas tinggi yang ramah lingkungan', 'Memberikan solusi desain lapangan yang inovatif dan sesuai kebutuhan', 'Menjaga kepercayaan dan kepuasan pelanggan sebagai prioritas utama', 'Mengembangkan teknologi terdepan dalam konstruksi lapangan olahraga'] as mission, index}
+								<div
+									class="group/item flex items-start space-x-4 rounded-xl bg-white/50 p-4 transition-all duration-300 hover:bg-white hover:shadow-md"
+								>
+									<div
+										class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-red-500 to-rose-600 text-sm font-bold text-white transition-transform duration-300 group-hover/item:scale-110"
+									>
+										{index + 1}
+									</div>
+									<p
+										class="leading-relaxed text-gray-700 transition-colors duration-300 group-hover/item:text-gray-900"
+									>
+										{mission}
+									</p>
+								</div>
+							{/each}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Enhanced Contact Section - Updated to Red Theme -->
+	<section
+		id="kontak"
+		class="overflow-hidden bg-gradient-to-br from-white via-red-50 to-rose-50 py-20"
+		data-section="contact"
+	>
+		<div class="mx-auto max-w-7xl px-4">
+			<div
+				class="animate-on-scroll mb-16 text-center"
+				class:animate-fadeInUp={animatedSections['contact']}
+			>
+				<span
+					class="mb-4 inline-block rounded-full bg-red-100 px-4 py-2 text-sm font-semibold text-red-800"
+				>
+					📞 Hubungi Kami
+				</span>
+				<h2 class="mb-6 text-3xl font-black text-gray-800 sm:text-4xl lg:text-5xl">
+					Siap Mewujudkan <span class="text-red-600">Impian</span><br />
+					<span class="text-2xl text-gray-600 sm:text-3xl lg:text-4xl">Lapangan Anda?</span>
+				</h2>
+				<p class="mb-4 text-lg text-gray-600">Konsultasi gratis dengan tim ahli kami</p>
+				<div
+					class="inline-flex items-center space-x-2 rounded-full bg-red-50 px-4 py-2 text-sm text-red-600"
+				>
+					<div class="h-2 w-2 animate-pulse rounded-full bg-red-500"></div>
+					<span>📞 Jam Operasional: Senin - Sabtu (08:00 - 17:00)</span>
+				</div>
+			</div>
+
+			<!-- Enhanced Contact Grid - Updated to Red Theme -->
+			<div class="mb-16 grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+				{#each contactInfo as contact, i}
+					<a
+						href={contact.link}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="group animate-on-scroll transform rounded-xl border border-red-100 bg-gradient-to-br from-white to-red-50 p-4 shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-500/10"
+						class:animate-bounceIn={animatedSections['contact']}
+						style="animation-delay: {i * 0.1}s"
+					>
+						<div class="mb-3 flex justify-center">
+							<div
+								class="animate-float flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-red-100 to-rose-100 text-xl shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:from-red-200 group-hover:to-rose-200"
+							>
+								{contact.icon}
+							</div>
+						</div>
+						<div class="text-center">
+							<h3
+								class="mb-1 text-base font-bold text-gray-800 transition-colors duration-300 group-hover:text-red-600"
+							>
+								{contact.title}
+							</h3>
+							<p
+								class="mb-1 text-xs font-medium break-words text-gray-700 transition-colors duration-300 group-hover:text-gray-900"
+							>
+								{contact.value}
+							</p>
+							<p
+								class="text-xs text-gray-500 transition-colors duration-300 group-hover:text-gray-600"
+							>
+								{contact.desc}
+							</p>
+						</div>
+						<div class="mt-3 flex justify-center">
+							<div
+								class="h-1 w-0 rounded-full bg-gradient-to-r from-red-500 to-rose-500 transition-all duration-500 group-hover:w-12"
+							></div>
+						</div>
+					</a>
+				{/each}
+			</div>
+
+			<!-- Enhanced Quick Actions - Updated to Red Theme -->
+			<div
+				class="animate-on-scroll text-center"
+				class:animate-fadeInUp={animatedSections['contact']}
+			>
+				<h3 class="mb-8 text-2xl font-bold text-gray-800">💬 Aksi Cepat</h3>
+				<div class="mb-8 flex flex-col justify-center gap-4 sm:flex-row">
+					<a
+						href="https://wa.me/6282xxxxxxxx?text=Halo%20AMFlooring,%20saya%20tertarik%20untuk%20konsultasi%20lapangan%20olahraga"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="group relative inline-flex transform items-center justify-center gap-3 overflow-hidden rounded-2xl bg-gradient-to-r from-green-500 to-green-600 px-8 py-4 font-bold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-green-500/25"
+					>
+						<span class="text-xl">💬</span>
+						<span class="relative z-10">Chat WhatsApp</span>
+						<div
+							class="absolute inset-0 bg-gradient-to-r from-green-600 to-green-700 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+						></div>
+					</a>
+					<a
+						href="tel:+6282xxxxxxxx"
+						class="group inline-flex transform items-center justify-center gap-3 rounded-2xl border-2 border-red-600 bg-white px-8 py-4 font-bold text-red-600 transition-all duration-300 hover:scale-105 hover:bg-red-600 hover:text-white hover:shadow-lg hover:shadow-red-500/25"
+					>
+						<span class="text-xl">📞</span>
+						<span>Telepon Langsung</span>
+					</a>
+				</div>
+
+				<!-- Additional CTA Section - Updated to Red Theme -->
+				<div
+					class="mx-auto max-w-2xl rounded-2xl bg-gradient-to-r from-red-500 to-rose-600 p-6 text-white"
 				>
 					<h4 class="mb-2 text-xl font-bold">🎁 Promo Spesial Bulan Ini!</h4>
 					<p class="mb-4">Dapatkan konsultasi gratis + diskon 10% untuk proyek pertama Anda</p>
@@ -912,7 +1031,7 @@
 	</section>
 </main>
 
-<!-- Enhanced Footer -->
+<!-- Enhanced Footer - Updated to Red Theme -->
 <footer
 	class="relative overflow-hidden bg-gradient-to-br from-slate-800 via-slate-900 to-black text-white"
 >
@@ -926,11 +1045,11 @@
 
 	<div class="relative mx-auto max-w-7xl px-4 py-16">
 		<div class="grid grid-cols-1 gap-8 lg:grid-cols-4">
-			<!-- Enhanced Company Info -->
+			<!-- Enhanced Company Info - Updated to Red Theme -->
 			<div class="lg:col-span-2">
 				<div class="mb-6 flex items-center space-x-3">
 					<div
-						class="group flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 shadow-xl transition-transform duration-300 hover:scale-110"
+						class="group flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-red-500 to-rose-600 shadow-xl transition-transform duration-300 hover:scale-110"
 					>
 						<img
 							src="/images/logo-amflooring.jpg"
@@ -939,7 +1058,7 @@
 						/>
 					</div>
 					<h3
-						class="animate-gradient bg-gradient-to-r from-red-600 via-teal-400 to-cyan-400 bg-clip-text text-3xl font-black text-transparent"
+						class="animate-gradient bg-gradient-to-r from-red-600 via-rose-400 to-pink-400 bg-clip-text text-3xl font-black text-transparent"
 					>
 						AMFlooring
 					</h3>
@@ -949,11 +1068,9 @@
 					Make your dream field come true with us.
 				</p>
 
-				<!-- Enhanced Social Media with SVG Icons -->
+				<!-- Enhanced Social Media with Red Theme -->
 				<div class="mb-6">
-					<h4 class="mb-4 text-sm font-semibold tracking-wide text-emerald-400 uppercase">
-						Follow Us
-					</h4>
+					<h4 class="mb-4 text-sm font-semibold tracking-wide text-red-400 uppercase">Follow Us</h4>
 					<div class="flex flex-wrap gap-3">
 						<!-- Instagram -->
 						<a
@@ -961,7 +1078,7 @@
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="Instagram"
-							class="group flex h-12 w-12 items-center justify-center rounded-xl bg-slate-700 transition-all duration-300 hover:scale-110 hover:bg-gradient-to-br hover:from-purple-500 hover:to-pink-500 hover:shadow-lg hover:shadow-pink-500/25"
+							class="group flex h-12 w-12 items-center justify-center rounded-xl bg-slate-700 transition-all duration-300 hover:scale-110 hover:bg-gradient-to-br hover:from-red-500 hover:to-pink-500 hover:shadow-lg hover:shadow-red-500/25"
 						>
 							<svg class="h-6 w-6 fill-current text-white" viewBox="0 0 24 24">
 								<path
@@ -976,7 +1093,7 @@
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="Facebook"
-							class="group flex h-12 w-12 items-center justify-center rounded-xl bg-slate-700 transition-all duration-300 hover:scale-110 hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/25"
+							class="group flex h-12 w-12 items-center justify-center rounded-xl bg-slate-700 transition-all duration-300 hover:scale-110 hover:bg-gradient-to-br hover:from-red-600 hover:to-rose-600 hover:shadow-lg hover:shadow-red-500/25"
 						>
 							<svg class="h-6 w-6 fill-current text-white" viewBox="0 0 24 24">
 								<path
@@ -991,7 +1108,7 @@
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="YouTube"
-							class="group flex h-12 w-12 items-center justify-center rounded-xl bg-slate-700 transition-all duration-300 hover:scale-110 hover:bg-red-600 hover:shadow-lg hover:shadow-red-500/25"
+							class="group flex h-12 w-12 items-center justify-center rounded-xl bg-slate-700 transition-all duration-300 hover:scale-110 hover:bg-gradient-to-br hover:from-red-600 hover:to-rose-600 hover:shadow-lg hover:shadow-red-500/25"
 						>
 							<svg class="h-6 w-6 fill-current text-white" viewBox="0 0 24 24">
 								<path
@@ -1021,11 +1138,11 @@
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="Threads"
-							class="group flex h-12 w-12 items-center justify-center rounded-xl bg-slate-700 transition-all duration-300 hover:scale-110 hover:bg-gradient-to-br hover:from-purple-600 hover:to-pink-600 hover:shadow-lg hover:shadow-purple-500/25"
+							class="group flex h-12 w-12 items-center justify-center rounded-xl bg-slate-700 transition-all duration-300 hover:scale-110 hover:bg-gradient-to-br hover:from-red-600 hover:to-pink-600 hover:shadow-lg hover:shadow-red-500/25"
 						>
 							<svg class="h-6 w-6 fill-current text-white" viewBox="0 0 24 24">
 								<path
-									d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.781 3.631 2.695 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.74-1.80-.365-.467-.835-.8-1.442-.992-.355-.112-.742-.17-1.152-.17-.35 0-.656.05-.918.152-.262.101-.498.249-.708.444-.42.39-.748.973-.925 1.64l-1.95-.484c.264-1.004.694-1.86 1.291-2.568.598-.708 1.355-1.26 2.270-1.657.915-.397 1.942-.595 3.08-.595.579 0 1.124.044 1.638.133.514.089.99.224 1.431.405 1.04.425 1.916 1.1 2.628 2.024.712.925 1.067 2.047 1.067 3.368v.024c.02 2.12-.88 3.854-2.256 5.178C17.663 23.35 15.492 24 12.199 24h-.013z"
+									d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.781 3.631 2.695 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.74-1.8-.365-.467-.835-.8-1.442-.992-.355-.112-.742-.17-1.152-.17-.35 0-.656.05-.918.152-.262.101-.498.249-.708.444-.42.39-.748.973-.925 1.64l-1.95-.484c.264-1.004.694-1.86 1.291-2.568.598-.708 1.355-1.26 2.270-1.657.915-.397 1.942-.595 3.08-.595.579 0 1.124.044 1.638.133.514.089.99.224 1.431.405 1.04.425 1.916 1.1 2.628 2.024.712.925 1.067 2.047 1.067 3.368v.024c.02 2.12-.88 3.854-2.256 5.178C17.663 23.35 15.492 24 12.199 24h-.013z"
 								/>
 							</svg>
 						</a>
@@ -1033,15 +1150,15 @@
 				</div>
 			</div>
 
-			<!-- Quick Links -->
+			<!-- Quick Links - Updated to Red Theme -->
 			<div>
-				<h4 class="mb-6 text-lg font-bold text-emerald-400">🔗 Quick Links</h4>
+				<h4 class="mb-6 text-lg font-bold text-red-400">🔗 Quick Links</h4>
 				<ul class="space-y-3">
 					{#each [{ name: 'Home', href: '#home', icon: '🏠' }, { name: 'About Us', href: '#about', icon: '🏢' }, { name: 'Services', href: '#layanan', icon: '⚽' }, { name: 'Vision & Mission', href: '#visi', icon: '🎯' }, { name: 'Contact', href: '#kontak', icon: '📞' }] as link}
 						<li>
 							<a
 								href={link.href}
-								class="group inline-flex items-center space-x-2 text-gray-300 transition-all duration-300 hover:translate-x-2 hover:text-emerald-400"
+								class="group inline-flex items-center space-x-2 text-gray-300 transition-all duration-300 hover:translate-x-2 hover:text-red-400"
 							>
 								<span class="text-sm">{link.icon}</span>
 								<span>{link.name}</span>
@@ -1051,15 +1168,15 @@
 				</ul>
 			</div>
 
-			<!-- Services -->
+			<!-- Services - Updated to Red Theme -->
 			<div>
-				<h4 class="mb-6 text-lg font-bold text-emerald-400">⚽ Our Services</h4>
+				<h4 class="mb-6 text-lg font-bold text-red-400">⚽ Our Services</h4>
 				<ul class="space-y-3">
 					{#each [{ name: 'Futsal Court', icon: '⚽' }, { name: 'Basketball Court', icon: '🏀' }, { name: 'Badminton Court', icon: '🏸' }, { name: 'Tennis Court', icon: '🎾' }, { name: 'Volleyball Court', icon: '🏐' }] as service}
 						<li>
 							<a
 								href="#layanan"
-								class="group inline-flex items-center space-x-2 text-gray-300 transition-all duration-300 hover:translate-x-2 hover:text-emerald-400"
+								class="group inline-flex items-center space-x-2 text-gray-300 transition-all duration-300 hover:translate-x-2 hover:text-red-400"
 							>
 								<span class="text-sm">{service.icon}</span>
 								<span>{service.name}</span>
@@ -1070,10 +1187,10 @@
 			</div>
 		</div>
 
-		<!-- Enhanced Contact Info Footer -->
+		<!-- Enhanced Contact Info Footer - Updated to Red Theme -->
 		<div class="mt-12 border-t border-slate-700 pt-8">
 			<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-				{#each [{ icon: '📍', label: 'Address', value: 'Jl. Olahraga No. 123, Medan', color: 'emerald' }, { icon: '📞', label: 'Phone', value: '+62 821-xxxx-xxxx', color: 'blue' }, { icon: '✉️', label: 'Email', value: 'info@amflooring.com', color: 'purple' }] as contact}
+				{#each [{ icon: '📍', label: 'Address', value: 'Jl. Olahraga No. 123, Medan', color: 'red' }, { icon: '📞', label: 'Phone', value: '+62 821-xxxx-xxxx', color: 'rose' }, { icon: '✉️', label: 'Email', value: 'info@amflooring.com', color: 'pink' }] as contact}
 					<div
 						class="group flex items-center space-x-4 rounded-xl bg-slate-700/50 p-4 transition-all duration-300 hover:bg-slate-700"
 					>
@@ -1099,11 +1216,9 @@
 					<p class="text-xs text-gray-500">Dibuat dengan ❤️ untuk masa depan olahraga Indonesia</p>
 				</div>
 				<div class="flex items-center space-x-4 text-xs text-gray-500">
-					<a href="#" class="transition-colors duration-300 hover:text-emerald-400"
-						>Privacy Policy</a
-					>
+					<a href="#" class="transition-colors duration-300 hover:text-red-400">Privacy Policy</a>
 					<span>•</span>
-					<a href="#" class="transition-colors duration-300 hover:text-emerald-400"
+					<a href="#" class="transition-colors duration-300 hover:text-red-400"
 						>Terms & Conditions</a
 					>
 				</div>
