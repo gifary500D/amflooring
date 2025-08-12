@@ -269,9 +269,7 @@
 </svelte:head>
 
 <main class="overflow-hidden pt-16">
-	<!-- Header Slider with Enhanced Parallax -->
-
-	<!-- Enhanced responsive slider section -->
+	<!-- Header Slider with Enhanced Navy-Red Theme -->
 	<section id="home" class="relative h-[85vh] min-h-[500px] overflow-hidden sm:min-h-[600px]">
 		{#each slides as slide, i}
 			<div
@@ -280,82 +278,76 @@
 					: 'opacity-0'}"
 				style="transform: translateY({current === i ? parallaxOffset : 0}px)"
 			>
-				<!-- Gambar responsif untuk slider -->
 				<img
 					src={slide}
 					alt="Slide {i + 1}"
-					class="h-full w-full scale-100
-				   object-cover object-center
-				   transition-transform duration-700
-				   sm:scale-110 sm:object-center"
+					class="h-full w-full scale-100 object-cover object-center transition-transform duration-700 sm:scale-110 sm:object-center"
 				/>
 			</div>
 		{/each}
 
-		<!-- Overlay gradasi animasi -->
+		<!-- Clean Dark Overlay -->
 		<div class="absolute inset-0">
 			<div
-				class="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-red-900/40 to-slate-900/80"
+				class="absolute inset-0 bg-gradient-to-br from-slate-900/85 via-slate-800/60 to-slate-900/85"
 			></div>
 			<div
-				class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+				class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"
 			></div>
 		</div>
 
-		<!-- Konten utama slider -->
+		<!-- Main Content -->
 		<div class="absolute inset-0 flex items-center justify-center px-4">
 			<div class="animate-fadeInUp max-w-5xl text-center">
 				<div class="mb-8">
-					<!-- Judul utama -->
 					<h1
 						class="mt-22 mb-6 text-3xl leading-tight font-black text-white sm:text-5xl lg:text-7xl"
 					>
 						Best Sports<br />
 						<span
-							class="animate-gradient bg-gradient-to-r from-red-400 via-rose-400 to-pink-400 bg-clip-text text-transparent"
+							class="animate-gradient bg-gradient-to-r from-red-500 via-red-600 to-red-700 bg-clip-text text-transparent"
 						>
 							Field Solutions
 						</span>
 					</h1>
-					<!-- Deskripsi singkat -->
 					<p
-						class="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-gray-200 sm:text-xl lg:text-2xl"
+						class="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-slate-200 sm:text-xl lg:text-2xl"
 					>
 						Bring your dream sports field to life with international quality and trusted service.
 					</p>
 				</div>
 
-				<!-- Tombol aksi -->
+				<!-- Action Buttons with Navy-Red Theme -->
 				<div class="flex flex-col justify-center gap-4 sm:flex-row">
 					<a
 						href="#layanan"
-						class="group relative transform overflow-hidden rounded-full bg-gradient-to-r from-red-600 to-rose-600 px-8 py-4 font-bold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-red-500/25"
+						class="group relative transform overflow-hidden rounded-full bg-gradient-to-r from-red-600 via-red-600 to-red-700 px-8 py-4 font-bold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-red-500/30"
 					>
 						<span class="relative z-10">🏆 View Services</span>
 						<div
-							class="absolute inset-0 bg-gradient-to-r from-red-700 to-rose-700 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+							class="absolute inset-0 bg-gradient-to-r from-red-700 to-red-800 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
 						></div>
 					</a>
 					<a
 						href="#kontak"
-						class="group transform rounded-full border-2 border-white/80 bg-white/10 px-8 py-4 font-bold text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white hover:text-red-600"
+						class="group transform rounded-full border-2 border-slate-300/90 bg-slate-900/20 px-8 py-4 font-bold text-white backdrop-blur-md transition-all duration-300 hover:scale-105 hover:border-red-400 hover:bg-slate-900/40"
 					>
 						💬 Free Consultation
 					</a>
 				</div>
 
-				<!-- Indikator kepercayaan -->
-				<div class="mt-8 mb-20 flex flex-wrap justify-center gap-8 text-sm text-gray-300">
+				<!-- Trust Indicators -->
+				<div class="mt-8 mb-20 flex flex-wrap justify-center gap-8 text-sm text-slate-300">
 					<div class="flex items-center space-x-2">
-						<div class="h-2 w-2 rounded-full bg-red-400"></div>
+						<div class="h-2 w-2 rounded-full bg-red-500"></div>
 						<span>10+ Years Experience</span>
 					</div>
 					<div class="flex items-center space-x-2">
-						<div class="h-2 w-2 rounded-full bg-rose-400"></div>
+						<div class="h-2 w-2 rounded-full bg-slate-400"></div>
 						<span>500+ Projects Completed</span>
 					</div>
 					<div class="flex items-center space-x-2">
-						<div class="h-2 w-2 rounded-full bg-pink-400"></div>
+						<div class="h-2 w-2 rounded-full bg-red-600"></div>
 						<span>5-Year Warranty</span>
 					</div>
 				</div>
@@ -373,14 +365,14 @@
 				>
 					{#if current === i}
 						<div
-							class="absolute inset-0 rounded-full bg-gradient-to-r from-red-400 to-rose-400 opacity-80"
+							class="absolute inset-0 rounded-full bg-gradient-to-r from-red-600 to-red-700 opacity-90"
 						></div>
 					{/if}
 				</button>
 			{/each}
 		</div>
 
-		<!-- Scroll indicator -->
+		<!-- Scroll Indicator -->
 		<div class="absolute bottom-4 left-1/2 -translate-x-1/2 transform animate-bounce">
 			<div class="flex flex-col items-center text-white/60">
 				<span class="mb-2 text-xs">Scroll</span>
@@ -395,7 +387,6 @@
 			</div>
 		</div>
 	</section>
-
 	<!-- Enhanced Stats Section -->
 	<section
 		class="relative overflow-hidden bg-gradient-to-br from-red-50 via-rose-50 to-pink-50 py-16"
