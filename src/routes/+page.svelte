@@ -510,7 +510,7 @@
 	<!-- Enhanced Services Section -->
 	<section
 		id="layanan"
-		class="overflow-hidden bg-gradient-to-br from-gray-50 via-emerald-50 to-teal-50 py-20"
+		class="overflow-hidden bg-gradient-to-br from-gray-50 via-rose-50 to-red-50 py-20"
 		data-section="services"
 	>
 		<div class="mx-auto max-w-7xl px-4">
@@ -519,12 +519,12 @@
 				class:animate-fadeInUp={animatedSections['services']}
 			>
 				<span
-					class="mb-4 inline-block rounded-full bg-emerald-100 px-4 py-2 text-sm font-semibold text-emerald-800"
+					class="mb-4 inline-block rounded-full bg-rose-100 px-4 py-2 text-sm font-semibold text-rose-800"
 				>
 					⚽ Layanan Kami
 				</span>
 				<h2 class="mb-6 text-3xl leading-tight font-black text-gray-800 sm:text-4xl lg:text-5xl">
-					Berbagai Jenis <span class="text-emerald-600">Lapangan</span><br />
+					Berbagai Jenis <span class="text-rose-600">Lapangan</span><br />
 					<span class="text-2xl text-gray-600 sm:text-3xl lg:text-4xl">untuk Kebutuhan Anda</span>
 				</h2>
 				<p class="mx-auto max-w-2xl text-lg text-gray-600">
@@ -614,6 +614,7 @@
 		data-section="contact"
 	>
 		<div class="mx-auto max-w-7xl px-4">
+			<!-- Judul dan Info Kontak -->
 			<div
 				class="animate-on-scroll mb-16 text-center"
 				class:animate-fadeInUp={animatedSections['contact']}
@@ -636,7 +637,7 @@
 				</div>
 			</div>
 
-			<!-- Enhanced Contact Grid -->
+			<!-- Grid Info Kontak -->
 			<div class="mb-16 grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-4">
 				{#each contactInfo as contact, i}
 					<a
@@ -680,7 +681,32 @@
 				{/each}
 			</div>
 
-			<!-- Enhanced Quick Actions -->
+			<!-- Google Maps dengan Desain -->
+			<div
+				class="group relative mb-16 w-full overflow-hidden rounded-2xl border-4 border-white shadow-2xl"
+			>
+				<div
+					class="absolute inset-0 z-10 bg-gradient-to-t from-black/40 via-transparent to-transparent"
+				></div>
+				<iframe
+					title="Lokasi AMFlooring di Google Maps"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127545.94303029644!2d98.451!3d3.600!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303123456789abcd%3A0xabcdef123456789!2sJl.%20Ikan%20Kakap%2004%2C%20Binjai%20Timur%2C%20Kota%20Binjai!5e0!3m2!1sid!2sid!4v1691760000000!5m2!1sid!2sid"
+					width="100%"
+					height="400"
+					style="border:0;"
+					allowfullscreen
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+					class="relative z-0 transition-transform duration-500 group-hover:scale-105"
+				></iframe>
+				<div
+					class="absolute bottom-4 left-4 z-20 rounded-lg bg-black/50 px-3 py-1 text-sm text-white shadow-lg"
+				>
+					📍 Kunjungi Lokasi Kami
+				</div>
+			</div>
+
+			<!-- Aksi Cepat -->
 			<div
 				class="animate-on-scroll text-center"
 				class:animate-fadeInUp={animatedSections['contact']}
@@ -708,7 +734,7 @@
 					</a>
 				</div>
 
-				<!-- Additional CTA Section -->
+				<!-- CTA Promo -->
 				<div
 					class="mx-auto max-w-2xl rounded-2xl bg-gradient-to-r from-red-500 to-rose-600 p-6 text-white"
 				>
@@ -725,6 +751,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- ✅ Tutup div utama -->
 	</section>
 
 	<!-- testimonials section with navigation -->
