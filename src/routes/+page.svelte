@@ -321,7 +321,7 @@
 				<div class="flex flex-col justify-center gap-4 sm:flex-row">
 					<a
 						href="#layanan"
-						class="group relative transform overflow-hidden rounded-full bg-gradient-to-r from-red-600 via-red-600 to-red-700 px-8 py-4 font-bold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-red-500/30"
+						class="group via-navy-600 relative transform overflow-hidden rounded-full bg-gradient-to-r from-red-600 to-red-700 px-8 py-4 font-bold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-red-500/30"
 					>
 						<span class="relative z-10">🏆 View Services</span>
 						<div

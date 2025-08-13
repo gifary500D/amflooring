@@ -8,57 +8,62 @@
 		unit: string;
 		image: string;
 	}
-
 	const materials: Material[] = [
 		{
 			name: 'Rumput Sintetis Premium',
 			specification: 'Fiber height 40-50mm, dtex 8800-12000',
 			price: 'Rp 150.000 - 200.000',
 			unit: 'per m²',
-			image: 'https://source.unsplash.com/300x200/?artificial-grass'
+			image:
+				'https://images.unsplash.com/photo-1603308824961-f5c3b8d6c802?auto=format&fit=crop&w=800&q=80'
 		},
 		{
 			name: 'Rubber Granules (Karet Butiran)',
 			specification: 'SBR/EPDM, ukuran 0.5-2.5mm',
 			price: 'Rp 45.000 - 65.000',
 			unit: 'per kg',
-			image: 'https://source.unsplash.com/300x200/?rubber-granules'
+			image:
+				'https://images.unsplash.com/photo-1597764692310-fcc0c85a9cdb?auto=format&fit=crop&w=800&q=80'
 		},
 		{
 			name: 'Base Material (Batu Split)',
 			specification: 'Aggregate ukuran 5-20mm',
 			price: 'Rp 180.000 - 220.000',
 			unit: 'per m³',
-			image: 'https://source.unsplash.com/300x200/?gravel-stone'
+			image:
+				'https://images.unsplash.com/photo-1596384275668-3d8d64c10909?auto=format&fit=crop&w=800&q=80'
 		},
 		{
 			name: 'Sistem Drainase',
 			specification: 'PVC pipe Ø 100-150mm + gravel bed',
 			price: 'Rp 85.000 - 120.000',
 			unit: 'per meter',
-			image: 'https://source.unsplash.com/300x200/?drainage-pipe'
+			image:
+				'https://images.unsplash.com/photo-1600486913747-55e229ad1911?auto=format&fit=crop&w=800&q=80'
 		},
 		{
 			name: 'Lampu LED Floodlight',
 			specification: '200W-400W, IP65, 5000K',
 			price: 'Rp 1.500.000 - 3.000.000',
 			unit: 'per unit',
-			image: 'https://source.unsplash.com/300x200/?led-floodlight'
+			image:
+				'https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?auto=format&fit=crop&w=800&q=80'
 		},
 		{
 			name: 'Pagar Pembatas',
 			specification: 'Galvanis + powder coating, tinggi 4m',
 			price: 'Rp 350.000 - 450.000',
 			unit: 'per meter',
-			image: 'https://source.unsplash.com/300x200/?chain-link-fence'
+			image:
+				'https://images.unsplash.com/photo-1505842465776-3a8f94ad9a92?auto=format&fit=crop&w=800&q=80'
 		}
 	];
 
-	let currentImageIndex = 0;
-	const heroImages = [
-		'https://source.unsplash.com/1200x600/?futsal-court',
-		'https://source.unsplash.com/1200x600/?soccer-field',
-		'https://source.unsplash.com/1200x600/?sports-construction'
+	let currentImageIndex: number = 0; // ✅ tambahkan tipe number
+	const heroImages: string[] = [
+		'https://images.unsplash.com/photo-1603308824961-f5c3b8d6c802?auto=format&fit=crop&w=1600&q=80',
+		'https://images.unsplash.com/photo-1592839713275-5e19f0b6f38d?auto=format&fit=crop&w=1600&q=80',
+		'https://images.unsplash.com/photo-1578425570439-7b9d92869d02?auto=format&fit=crop&w=1600&q=80'
 	];
 
 	onMount(() => {
