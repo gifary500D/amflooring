@@ -265,6 +265,52 @@
 			-webkit-text-fill-color: transparent;
 			background-clip: text;
 		}
+
+		/* Custom animations */
+		@keyframes float {
+			0%,
+			100% {
+				transform: translateY(0px);
+			}
+			50% {
+				transform: translateY(-10px);
+			}
+		}
+
+		.animate-float {
+			animation: float 3s ease-in-out infinite;
+		}
+
+		/* Enhanced pulse animation for promo elements */
+		@keyframes enhanced-pulse {
+			0%,
+			100% {
+				opacity: 1;
+				transform: scale(1);
+			}
+			50% {
+				opacity: 0.7;
+				transform: scale(1.05);
+			}
+		}
+
+		.animate-enhanced-pulse {
+			animation: enhanced-pulse 2s ease-in-out infinite;
+		}
+
+		/* Shine effect for promo box */
+		@keyframes shine {
+			0% {
+				transform: translateX(-100%) rotate(-45deg);
+			}
+			100% {
+				transform: translateX(200%) rotate(-45deg);
+			}
+		}
+
+		.animate-shine {
+			animation: shine 2s ease-in-out infinite;
+		}
 	</style>
 </svelte:head>
 
@@ -297,12 +343,17 @@
 		</div>
 
 		<!-- Main Content -->
-		<div class="absolute inset-0 flex items-center justify-center px-4">
-			<div class="animate-fadeInUp max-w-5xl text-center">
+		<div class="absolute inset-0 flex items-center justify-center px-4 lg:justify-start lg:px-20">
+			<div class="animate-fadeInUp max-w-5xl text-center lg:-mt-10 lg:text-left">
 				<div class="mb-8">
-					<h1
-						class="mt-22 mb-6 text-3xl leading-tight font-black text-white sm:text-5xl lg:text-7xl"
+					<!-- Subheading Perusahaan -->
+					<p
+						class="mb-2 text-sm font-semibold tracking-widest text-red-400 sm:text-base lg:text-lg"
 					>
+						CV. AM KARYA MANDIRI
+					</p>
+
+					<h1 class="mb-6 text-3xl leading-tight font-black text-white sm:text-5xl lg:text-7xl">
 						Best Sports<br />
 						<span
 							class="animate-gradient bg-gradient-to-r from-red-500 via-red-600 to-red-700 bg-clip-text text-transparent"
@@ -311,14 +362,14 @@
 						</span>
 					</h1>
 					<p
-						class="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-slate-200 sm:text-xl lg:text-2xl"
+						class="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-slate-200 sm:text-xl lg:mx-0 lg:text-2xl"
 					>
 						Bring your dream sports field to life with international quality and trusted service.
 					</p>
 				</div>
 
-				<!-- Action Buttons with Navy-Red Theme -->
-				<div class="flex flex-col justify-center gap-4 sm:flex-row">
+				<!-- Action Buttons -->
+				<div class="flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
 					<a
 						href="#layanan"
 						class="group via-navy-600 relative transform overflow-hidden rounded-full bg-gradient-to-r from-red-600 to-red-700 px-8 py-4 font-bold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-red-500/30"
@@ -337,7 +388,9 @@
 				</div>
 
 				<!-- Trust Indicators -->
-				<div class="mt-8 mb-20 flex flex-wrap justify-center gap-8 text-sm text-slate-300">
+				<div
+					class="mt-8 flex flex-wrap justify-center gap-8 text-sm text-slate-300 lg:justify-start"
+				>
 					<div class="flex items-center space-x-2">
 						<div class="h-2 w-2 rounded-full bg-red-500"></div>
 						<span>10+ Years Experience</span>
@@ -928,54 +981,87 @@
 			</div>
 		</div>
 	</section>
-	<!-- Enhanced Contact Section - Updated to Red Theme -->
+	<!-- Enhanced Contact Section with Advanced Animations -->
 	<section
 		id="kontak"
-		class="overflow-hidden bg-gradient-to-br from-white via-red-50 to-rose-50 py-20"
+		class="relative overflow-hidden bg-gradient-to-br from-white via-red-50 to-rose-50 py-20"
 		data-section="contact"
 	>
-		<div class="mx-auto max-w-7xl px-4">
+		<!-- Background Decorative Elements -->
+		<div class="absolute inset-0 overflow-hidden">
+			<div
+				class="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-br from-red-200/30 to-rose-300/30 blur-3xl"
+			></div>
+			<div
+				class="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-br from-rose-200/30 to-red-300/30 blur-3xl"
+			></div>
+			<!-- Floating particles -->
+			<div class="absolute top-20 left-10 h-2 w-2 animate-ping rounded-full bg-red-400/60"></div>
+			<div class="absolute top-40 right-20 h-1 w-1 animate-pulse rounded-full bg-rose-400/60"></div>
+			<div
+				class="absolute bottom-32 left-1/4 h-1.5 w-1.5 animate-ping rounded-full bg-red-500/40"
+				style="animation-delay: 1s;"
+			></div>
+		</div>
+
+		<div class="relative mx-auto max-w-7xl px-4">
+			<!-- Header Section with Enhanced Animation -->
 			<div
 				class="animate-on-scroll mb-16 text-center"
 				class:animate-fadeInUp={animatedSections['contact']}
 			>
 				<span
-					class="mb-4 inline-block rounded-full bg-red-100 px-4 py-2 text-sm font-semibold text-red-800"
+					class="mb-4 inline-block transform rounded-full border border-red-200 bg-gradient-to-r from-red-100 to-rose-100 px-6 py-3 text-sm font-bold text-red-800 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
 				>
 					📞 Hubungi Kami
 				</span>
 				<h2 class="mb-6 text-3xl font-black text-gray-800 sm:text-4xl lg:text-5xl">
-					Siap Mewujudkan <span class="text-red-600">Impian</span><br />
+					Siap Mewujudkan <span
+						class="bg-gradient-to-r from-red-600 to-rose-600 bg-clip-text text-transparent"
+						>Impian</span
+					><br />
 					<span class="text-2xl text-gray-600 sm:text-3xl lg:text-4xl">Lapangan Anda?</span>
 				</h2>
-				<p class="mb-4 text-lg text-gray-600">Konsultasi gratis dengan tim ahli kami</p>
+				<p class="mb-6 text-lg text-gray-600">Konsultasi gratis dengan tim ahli kami</p>
 				<div
-					class="inline-flex items-center space-x-2 rounded-full bg-red-50 px-4 py-2 text-sm text-red-600"
+					class="inline-flex items-center space-x-3 rounded-full border border-red-200 bg-gradient-to-r from-red-50 to-rose-50 px-6 py-3 text-sm font-medium text-red-600 shadow-lg"
 				>
-					<div class="h-2 w-2 animate-pulse rounded-full bg-red-500"></div>
+					<div class="relative">
+						<div class="h-3 w-3 animate-ping rounded-full bg-red-500 opacity-75"></div>
+						<div class="absolute top-0 h-3 w-3 rounded-full bg-red-500"></div>
+					</div>
 					<span>📞 Jam Operasional: Senin - Sabtu (08:00 - 17:00)</span>
 				</div>
 			</div>
 
-			<!-- Enhanced Contact Grid - Updated to Red Theme -->
+			<!-- Enhanced Contact Grid -->
 			<div class="mb-16 grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-4">
 				{#each contactInfo as contact, i}
 					<a
 						href={contact.link}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="group animate-on-scroll transform rounded-xl border border-red-100 bg-gradient-to-br from-white to-red-50 p-4 shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-500/10"
+						class="group animate-on-scroll via-red-25 relative transform overflow-hidden rounded-2xl border-2 border-red-100 bg-gradient-to-br from-white to-rose-50 p-4 shadow-xl backdrop-blur-sm transition-all duration-500 hover:-translate-y-3 hover:border-red-200 hover:shadow-2xl hover:shadow-red-500/20"
 						class:animate-bounceIn={animatedSections['contact']}
-						style="animation-delay: {i * 0.1}s"
+						style="animation-delay: {i * 0.15}s"
 					>
-						<div class="mb-3 flex justify-center">
+						<!-- Hover overlay effect -->
+						<div
+							class="absolute inset-0 bg-gradient-to-br from-red-500/5 to-rose-500/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+						></div>
+
+						<!-- Icon container with enhanced animation -->
+						<div class="relative z-10 mb-3 flex justify-center">
 							<div
-								class="animate-float flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-red-100 to-rose-100 text-xl shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:from-red-200 group-hover:to-rose-200"
+								class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-red-100 to-rose-100 text-xl shadow-lg transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 group-hover:from-red-200 group-hover:to-rose-200 group-hover:shadow-xl"
+								style="animation: float 3s ease-in-out infinite; animation-delay: {i * 0.5}s;"
 							>
 								{contact.icon}
 							</div>
 						</div>
-						<div class="text-center">
+
+						<!-- Content -->
+						<div class="relative z-10 text-center">
 							<h3
 								class="mb-1 text-base font-bold text-gray-800 transition-colors duration-300 group-hover:text-red-600"
 							>
@@ -992,56 +1078,214 @@
 								{contact.desc}
 							</p>
 						</div>
-						<div class="mt-3 flex justify-center">
+
+						<!-- Animated bottom border -->
+						<div class="relative z-10 mt-3 flex justify-center">
 							<div
-								class="h-1 w-0 rounded-full bg-gradient-to-r from-red-500 to-rose-500 transition-all duration-500 group-hover:w-12"
+								class="h-1 w-0 rounded-full bg-gradient-to-r from-red-500 to-rose-500 transition-all duration-700 group-hover:w-12"
 							></div>
 						</div>
+
+						<!-- Corner decoration -->
+						<div
+							class="absolute -top-2 -right-2 h-8 w-8 rounded-full bg-gradient-to-br from-red-400/20 to-rose-400/20 opacity-0 transition-all duration-300 group-hover:opacity-100"
+						></div>
 					</a>
 				{/each}
 			</div>
 
-			<!-- Enhanced Quick Actions - Updated to Red Theme -->
+			<!-- Enhanced Map Section -->
+			<div class="mb-16">
+				<div
+					class="animate-on-scroll mb-8 text-center"
+					class:animate-fadeInUp={animatedSections['contact']}
+				>
+					<h3 class="mb-4 text-2xl font-bold text-gray-800">📍 Lokasi Kami</h3>
+					<p class="text-gray-600">Kunjungi showroom dan workshop kami</p>
+				</div>
+
+				<div class="relative mx-auto max-w-4xl">
+					<div
+						class="group relative overflow-hidden rounded-3xl border-4 border-red-200 bg-white p-2 shadow-2xl transition-all duration-500 hover:border-red-300 hover:shadow-red-500/20"
+					>
+						<!-- Decorative corners -->
+						<div
+							class="absolute -top-1 -left-1 h-6 w-6 border-t-4 border-l-4 border-red-500 opacity-0 transition-all duration-500 group-hover:opacity-100"
+						></div>
+						<div
+							class="absolute -top-1 -right-1 h-6 w-6 border-t-4 border-r-4 border-red-500 opacity-0 transition-all duration-500 group-hover:opacity-100"
+						></div>
+						<div
+							class="absolute -bottom-1 -left-1 h-6 w-6 border-b-4 border-l-4 border-red-500 opacity-0 transition-all duration-500 group-hover:opacity-100"
+						></div>
+						<div
+							class="absolute -right-1 -bottom-1 h-6 w-6 border-r-4 border-b-4 border-red-500 opacity-0 transition-all duration-500 group-hover:opacity-100"
+						></div>
+
+						<!-- Map iframe with overlay -->
+						<div class="relative overflow-hidden rounded-2xl">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6665721267894!2d98.6846638!3d3.5951956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMzUnNDIuNyJOIDk4wrA0MScwNC44IkU!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid"
+								class="h-64 w-full border-0 transition-all duration-500 group-hover:scale-105 sm:h-80 lg:h-96"
+								style="filter: grayscale(0.2) contrast(1.1);"
+								allowfullscreen
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"
+								title="Lokasi AMFlooring"
+							></iframe>
+
+							<!-- Hover overlay with info -->
+							<div
+								class="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 transition-all duration-300 group-hover:opacity-100"
+							>
+								<div class="rounded-2xl bg-white/95 p-6 text-center backdrop-blur-sm">
+									<div class="mb-2 text-2xl">📍</div>
+									<h4 class="mb-1 font-bold text-gray-800">AMFlooring Workshop</h4>
+									<p class="text-sm text-gray-600">Medan, Sumatera Utara</p>
+									<div class="mt-3 text-xs font-medium text-red-600">
+										Klik untuk membuka di Google Maps
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Enhanced Quick Actions -->
 			<div
 				class="animate-on-scroll text-center"
 				class:animate-fadeInUp={animatedSections['contact']}
 			>
 				<h3 class="mb-8 text-2xl font-bold text-gray-800">💬 Aksi Cepat</h3>
 				<div class="mb-8 flex flex-col justify-center gap-4 sm:flex-row">
+					<!-- WhatsApp Button - Fixed hover icon issue -->
 					<a
 						href="https://wa.me/6282xxxxxxxx?text=Halo%20AMFlooring,%20saya%20tertarik%20untuk%20konsultasi%20lapangan%20olahraga"
 						target="_blank"
 						rel="noopener noreferrer"
-						class="group relative inline-flex transform items-center justify-center gap-3 overflow-hidden rounded-2xl bg-gradient-to-r from-green-500 to-green-600 px-8 py-4 font-bold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-green-500/25"
+						class="group relative inline-flex transform items-center justify-center gap-3 overflow-hidden rounded-2xl bg-gradient-to-r from-green-500 to-green-600 px-8 py-4 font-bold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-green-500/30"
 					>
-						<span class="text-xl">💬</span>
-						<span class="relative z-10">Chat WhatsApp</span>
+						<!-- Background animation -->
 						<div
 							class="absolute inset-0 bg-gradient-to-r from-green-600 to-green-700 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
 						></div>
+
+						<!-- Icon - Fixed to prevent disappearing -->
+						<span
+							class="relative z-10 text-xl transition-transform duration-300 group-hover:scale-110"
+							>💬</span
+						>
+						<span class="relative z-10 transition-all duration-300">Chat WhatsApp</span>
+
+						<!-- Ripple effect -->
+						<div
+							class="absolute inset-0 -z-10 rounded-2xl bg-green-400 opacity-0 transition-all duration-500 group-hover:animate-ping group-hover:opacity-20"
+						></div>
 					</a>
+
+					<!-- Phone Button -->
 					<a
 						href="tel:+6282xxxxxxxx"
-						class="group inline-flex transform items-center justify-center gap-3 rounded-2xl border-2 border-red-600 bg-white px-8 py-4 font-bold text-red-600 transition-all duration-300 hover:scale-105 hover:bg-red-600 hover:text-white hover:shadow-lg hover:shadow-red-500/25"
+						class="group relative inline-flex transform items-center justify-center gap-3 overflow-hidden rounded-2xl border-2 border-red-600 bg-white px-8 py-4 font-bold text-red-600 transition-all duration-300 hover:scale-105 hover:bg-red-600 hover:text-white hover:shadow-lg hover:shadow-red-500/30"
 					>
-						<span class="text-xl">📞</span>
-						<span>Telepon Langsung</span>
+						<span
+							class="relative z-10 text-xl transition-transform duration-300 group-hover:scale-110"
+							>📞</span
+						>
+						<span class="relative z-10">Telepon Langsung</span>
+
+						<!-- Background fill animation -->
+						<div
+							class="absolute inset-0 scale-x-0 bg-red-600 transition-transform duration-300 group-hover:scale-x-100"
+						></div>
 					</a>
 				</div>
 
-				<!-- Additional CTA Section - Updated to Red Theme -->
-				<div
-					class="mx-auto max-w-2xl rounded-2xl bg-gradient-to-r from-red-500 to-rose-600 p-6 text-white"
-				>
-					<h4 class="mb-2 text-xl font-bold">🎁 Promo Spesial Bulan Ini!</h4>
-					<p class="mb-4">Dapatkan konsultasi gratis + diskon 10% untuk proyek pertama Anda</p>
-					<div class="flex flex-col justify-center gap-3 sm:flex-row">
-						<span class="inline-flex items-center rounded-full bg-white/20 px-3 py-1 text-sm"
-							>⏰ Terbatas sampai akhir bulan</span
+				<!-- Enhanced Promo Section with Animations -->
+				<div class="relative mx-auto max-w-2xl">
+					<!-- Animated border container -->
+					<div
+						class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-red-500 via-rose-500 to-red-600 p-1 shadow-2xl"
+					>
+						<!-- Animated border gradient -->
+						<div
+							class="absolute inset-0 animate-pulse bg-gradient-to-r from-red-400 via-rose-400 to-red-400 opacity-50"
+						></div>
+
+						<!-- Main content container -->
+						<div
+							class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-red-500 to-rose-600 p-8 text-white"
 						>
-						<span class="inline-flex items-center rounded-full bg-white/20 px-3 py-1 text-sm"
-							>✅ Garansi 5 tahun</span
+							<!-- Background pattern -->
+							<div class="absolute inset-0 opacity-10">
+								<div
+									class="absolute top-4 left-4 h-8 w-8 rounded-full border-2 border-white/30"
+								></div>
+								<div class="absolute top-8 right-8 h-4 w-4 rounded-full bg-white/20"></div>
+								<div
+									class="absolute bottom-6 left-12 h-6 w-6 rotate-45 border-2 border-white/20"
+								></div>
+								<div class="absolute right-16 bottom-4 h-3 w-3 rounded-full bg-white/30"></div>
+							</div>
+
+							<!-- Floating elements -->
+							<div
+								class="absolute top-2 right-2 animate-bounce text-2xl"
+								style="animation-delay: 0.5s;"
+							>
+								✨
+							</div>
+							<div
+								class="absolute bottom-2 left-2 animate-bounce text-xl"
+								style="animation-delay: 1s;"
+							>
+								🎁
+							</div>
+
+							<!-- Content -->
+							<div class="relative z-10">
+								<div class="mb-3 flex items-center justify-center gap-2">
+									<span class="animate-pulse text-2xl">🎁</span>
+									<h4 class="text-xl font-bold sm:text-2xl">Promo Spesial Bulan Ini!</h4>
+									<span class="animate-pulse text-2xl">🎁</span>
+								</div>
+
+								<p class="mb-6 text-base opacity-95 sm:text-lg">
+									Dapatkan konsultasi gratis + diskon 10% untuk proyek pertama Anda
+								</p>
+
+								<div class="flex flex-col justify-center gap-3 sm:flex-row">
+									<span
+										class="group inline-flex transform items-center rounded-full border border-white/30 bg-white/20 px-4 py-2 text-sm font-medium backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white/30"
+									>
+										<span class="mr-2 animate-pulse">⏰</span>
+										Terbatas sampai akhir bulan
+									</span>
+									<span
+										class="group inline-flex transform items-center rounded-full border border-white/30 bg-white/20 px-4 py-2 text-sm font-medium backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white/30"
+									>
+										<span class="mr-2 animate-pulse text-green-300">✅</span>
+										Garansi 5 tahun
+									</span>
+								</div>
+							</div>
+
+							<!-- Animated shine effect -->
+							<div
+								class="absolute inset-0 -rotate-45 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 transition-all duration-1000 group-hover:translate-x-full group-hover:opacity-100"
+								style="transform: translateX(-100%);"
+							></div>
+						</div>
+					</div>
+
+					<!-- Floating call-to-action -->
+					<div class="absolute -bottom-4 left-1/2 -translate-x-1/2 transform">
+						<div
+							class="animate-bounce rounded-full bg-white px-4 py-2 text-sm font-bold text-red-600 shadow-lg"
 						>
+							👆 Jangan sampai terlewat!
+						</div>
 					</div>
 				</div>
 			</div>
